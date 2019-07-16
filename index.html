@@ -5,22 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Berlin Clock</title>
-        <style>
-            body::after {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                z-index: -1;
-                width: 100vw; height: 100vh;
-                background: center top/cover url('img/kudamm.jpg') no-repeat;
-                filter: blur(2px);
-            }
-        </style>
         <link rel="stylesheet" href="css/custom-min.css">
     </head>
     <body>
         <!-- <h1>Mengenlehreuhr</h1> -->
-        <div class="berlin-clock" id="berlinClock">
+        <div class="clock" id="berlinClock">
             <div class="second-row row">
                 <div class="sec unit"></div>
             </div>
@@ -68,9 +57,9 @@
                 this.current_minutes(d.getMinutes());
                 this.current_hours(d.getHours());
             };
-            function pad2(number) {
-                return (number < 10 ? "0" : "") + number;
-            }
+            // function pad2(number) {
+            //     return (number < 10 ? "0" : "") + number;
+            // }
             berlinClock.prototype.current_seconds = function(seconds) {
                 this.dom.find(".second-row > div").toggleClass("on", seconds % 2 === 1);
             };
@@ -99,13 +88,10 @@
         <script defer>		
         $(document).ready(function() {					
             var berlin_clock = new berlinClock('#berlinClock');
-            // var berlin_clock1 = new berlinClock('#berlinClock1');				
             function tick() {
                 berlin_clock.update();
-                // berlin_clock1.update();
                 setInterval(function() {
                     berlin_clock.update();
-                    // berlin_clock1.update();
                 }, 1000);
             }
             tick();

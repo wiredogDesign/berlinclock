@@ -3,11 +3,14 @@
     --orange:       hsla(30, 100%, 57%, 0.8);
     --yellow:       hsla(58, 100%, 57%, 0.7);
     --unitbg:       hsla(0, 0%, 100%, 0.6);
-    --unittop:      hsl(0, 0%, 76%);
     --border:       hsl(0, 0%, 80%);
-    --frame:        hsl(0, 0%, 57%);
-    --heading:      hsl(0, 0%, 44%);
     
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -16,20 +19,23 @@ body {
     align-items: center;
 }
 
-h1 {
-    font-family: "Bauhaus Std";
-    font-weight: 300;
-    font-size: 400%;
-    color: var(--heading);
-    filter: drop-shadow(0 2px 4px);
+body::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100vw; height: 100vh;
+    background: center top/cover url('../img/kudamm.jpg') no-repeat;
+    /* filter: blur(2px); */
 }
 
-.berlin-clock {
-    width: 50vw; 
+.clock {
+    width: 100vw;
 }
 
 .row {
     display: flex;
+    margin: 0 2px;
 }
 
 .row > div {
@@ -40,7 +46,7 @@ h1 {
 .unit {
     display: inline-block;
     width: 100%;
-    height: 70px;
+    height: calc(20vh - 4px);
     background: var(--unitbg);
 }
 
