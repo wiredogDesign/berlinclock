@@ -3,7 +3,7 @@
     --orange:hsla(30, 100%, 57%, 0.8);
     --yellow:hsla(58, 100%, 57%, 0.7);
     --unitbg:hsla(0, 0%, 100%, 0.6);
-    --border:hsl(0, 0%, 80%);
+    --border:hsla(0, 0%, 27%, 0.8);
     
 }
 
@@ -17,6 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 body::after {
@@ -25,7 +26,8 @@ body::after {
     bottom: 0;
     z-index: -1;
     width: 100vw; height: 100vh;
-    background: center top/cover url('../img/kudamm.jpg') no-repeat;
+    background: url('../img/kudamm.jpg') no-repeat;
+    background-size: cover;
     /* filter: blur(2px); */
 }
 
@@ -35,18 +37,16 @@ body::after {
 
 .row {
     display: flex;
-    margin: 0 2px;
 }
 
 .row > div {
     border: 1px solid var(--border);
-    margin: 2px;
 }
 
 .unit {
     display: inline-block;
     width: 100%;
-    height: calc(20vh - 4px);
+    height: 20vh;
     background: var(--unitbg);
 }
 
