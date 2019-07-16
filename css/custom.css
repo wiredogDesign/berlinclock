@@ -1,7 +1,7 @@
 :root {
     --red:hsla(0, 100%, 48%, 0.7);
-    --orange:hsla(30, 100%, 57%, 0.8);
-    --yellow:hsla(58, 100%, 57%, 0.7);
+    --orange:hsla(30, 100%, 48%, 0.8);
+    --yellow:hsla(58, 100%, 69%, 0.7);
     --unitbg:hsla(0, 0%, 100%, 0.6);
     --border:hsla(0, 0%, 27%, 0.8);
     
