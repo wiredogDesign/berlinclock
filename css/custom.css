@@ -54,11 +54,13 @@ body::after {
     background-color: var(--yellow); 
 }
 
-.hour-top .unit.on, .hour-bottom .unit.on {
+.hour-top .unit.on,
+.hour-bottom .unit.on {
     background-color: var(--red); 
 }
 
-.minute-top .unit.on, .minute-bottom .unit.on {
+.minute-top .unit.on,
+.minute-bottom .unit.on {
     background-color: var(--orange);
 }
 
