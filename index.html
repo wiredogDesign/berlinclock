@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Berlin Clock</title>
+        <style>
+            body::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                z-index: -1;
+                width: 100vw; height: 100vh;
+                background: center top/cover url('img/kudamm.jpg') no-repeat;
+                filter: blur(2px);
+            }
+        </style>
+        <link rel="stylesheet" href="css/custom-min.css">
+    </head>
+    <body>
+        <!-- <h1>Mengenlehreuhr</h1> -->
+        <div class="berlin-clock" id="berlinClock">
+            <div class="second-row row">
+                <div class="sec unit"></div>
+            </div>
+            <div class="hour-top row">
+                <div class="hour unit"></div>
+                <div class="hour unit"></div>
+                <div class="hour unit"></div>
+                <div class="hour unit"></div>
+            </div>
+            <div class="hour-bottom row">
+                <div class="hour unit"></div>
+                <div class="hour unit"></div>
+                <div class="hour unit"></div>
+                <div class="hour unit"></div>
+            </div>
+            <div class="minute-top row">
+                <div class="min unit"></div>
+                <div class="min unit"></div>
+                <div class="min unit"></div>
+                <div class="min unit"></div>
+                <div class="min unit"></div>
+                <div class="min unit"></div>
+                <div class="min unit"></div>
+                <div class="min unit"></div>
+                <div class="min unit"></div>
+                <div class="min unit"></div>
+                <div class="min unit"></div>
+            </div>
+            <div class="minute-bottom row">
+                <div class="min unit"></div>
+                <div class="min unit"></div>
+                <div class="min unit"></div>
+                <div class="min unit"></div>
+            </div>
+        </div>
+        <script src="js/bower/jQuery/dist/jquery.min.js"></script>
+        <script>
+            var berlinClock = function(dom) {
+                this.dom = $(dom);
+                this.update();
+            };
+            berlinClock.prototype.update = function(d) {
+                var d = d || new Date();
+                this.current_seconds(d.getSeconds());
+                this.current_minutes(d.getMinutes());
+                this.current_hours(d.getHours());
+            };
+            function pad2(number) {
+                return (number < 10 ? "0" : "") + number;
+            }
+            berlinClock.prototype.current_seconds = function(seconds) {
+                this.dom.find(".second-row > div").toggleClass("on", seconds % 2 === 1);
+            };
+            berlinClock.prototype.current_minutes = function(minutes) {
+                var minutes2 = minutes % 5;
+                var minutes1 = (minutes - minutes2) / 5;
+                this.dom.find(".minute-top.row > div").each(function(i) {
+                    $(this).toggleClass("on", --minutes1 >= 0);
+                });
+                this.dom.find(".minute-bottom.row > div").each(function(i) {
+                    $(this).toggleClass("on", --minutes2 >= 0);
+                });
+            };
+            berlinClock.prototype.current_hours = function(hours) {
+                var hours2 = hours % 5;
+                var hours1 = (hours - hours2) / 5;
+                this.dom.find(".hour-top.row > div").each(function(i) {
+                    $(this).toggleClass("on", --hours1 >= 0);
+                });
+                this.dom.find(".hour-bottom.row > div").each(function(i) {
+                    $(this).toggleClass("on", --hours2 >= 0);
+                });
+            };
+        </script>
+
+        <script defer>		
+        $(document).ready(function() {					
+            var berlin_clock = new berlinClock('#berlinClock');
+            // var berlin_clock1 = new berlinClock('#berlinClock1');				
+            function tick() {
+                berlin_clock.update();
+                // berlin_clock1.update();
+                setInterval(function() {
+                    berlin_clock.update();
+                    // berlin_clock1.update();
+                }, 1000);
+            }
+            tick();
+        });
+    </script>
+    </body>
+</html>

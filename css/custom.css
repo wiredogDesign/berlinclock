@@ -1,0 +1,63 @@
+:root {
+    --red:          hsla(0, 100%, 48%, 0.7);
+    --orange:       hsla(30, 100%, 57%, 0.8);
+    --yellow:       hsla(58, 100%, 57%, 0.7);
+    --unitbg:       hsla(0, 0%, 100%, 0.6);
+    --unittop:      hsl(0, 0%, 76%);
+    --border:       hsl(0, 0%, 80%);
+    --frame:        hsl(0, 0%, 57%);
+    --heading:      hsl(0, 0%, 44%);
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Bauhaus Std";
+    font-weight: 300;
+    font-size: 400%;
+    color: var(--heading);
+    filter: drop-shadow(0 2px 4px);
+}
+
+.berlin-clock {
+    width: 50vw; 
+}
+
+.row {
+    display: flex;
+}
+
+.row > div {
+    border: 1px solid var(--border);
+    margin: 2px;
+}
+
+.unit {
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+    background: var(--unitbg);
+}
+
+.second-row .unit.on {
+    background-color: var(--yellow); 
+}
+
+.hour-top .unit.on, .hour-bottom .unit.on {
+    background-color: var(--red); 
+}
+
+.minute-top .unit.on, .minute-bottom .unit.on {
+    background-color: var(--orange);
+}
+
+.minute-top .unit:nth-child(3).on,
+.minute-top .unit:nth-child(6).on,
+.minute-top .unit:nth-child(9).on {
+    background-color: var(--red);
+}
