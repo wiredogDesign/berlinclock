@@ -86,16 +86,16 @@
         </script>
 
         <script defer>		
-        $(document).ready(function() {					
-            var berlin_clock = new berlinClock('#berlinClock');
-            function tick() {
-                berlin_clock.update();
-                setInterval(function() {
+            $(document).ready(function() {					
+                var berlin_clock = new berlinClock('#berlinClock');
+                function tick() {
                     berlin_clock.update();
-                }, 1000);
-            }
-            tick();
-        });
-    </script>
+                    setInterval(function() {
+                        berlin_clock.update();
+                    }, 1000);
+                }
+                tick();
+            });
+        </script>
     </body>
 </html>
