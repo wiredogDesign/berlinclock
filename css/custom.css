@@ -50,6 +50,14 @@ body::after {
     background: var(--unitbg);
 }
 
+.second-row {
+    width: 20vw;
+    margin: 0 auto;
+    transform: rotate(15deg) translateY(0%);
+    transform-origin: bottom left;
+    box-shadow: 3px 7px 8px 0 hsla(0, 0%, 0%, 0.2);
+}
+
 .second-row .unit.on {
     background-color: var(--yellow); 
 }
