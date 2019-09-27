@@ -48,6 +48,7 @@ body::after {
     width: 100%;
     height: 20vh;
     background: var(--unitbg);
+    box-shadow: inset 0 0 6px 0 hsla(0, 0%, 0%, 0.3);
 }
 
 .second-row {
@@ -60,6 +61,10 @@ body::after {
 
 .second-row .unit.on {
     background-color: var(--yellow); 
+}
+
+.hour-top .unit {
+	border-top-width: 2px;
 }
 
 .hour-top .unit.on,
