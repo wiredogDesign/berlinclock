@@ -4,7 +4,6 @@
     --yellow:hsla(58, 100%, 69%, 0.7);
     --unitbg:hsla(0, 0%, 100%, 0.6);
     --border:hsla(0, 0%, 27%, 0.8);
-    
 }
 
 * {
@@ -29,6 +28,12 @@ body::after {
     background: url('../img/kudamm.jpg') no-repeat;
     background-size: cover;
     /* filter: blur(2px); */
+}
+
+h1 {
+	font-size: 1.7vw;
+	padding: 1em 1em 0;
+	text-align: right;
 }
 
 .clock {
