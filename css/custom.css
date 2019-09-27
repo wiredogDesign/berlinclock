@@ -3,7 +3,7 @@
     --orange:hsla(30, 100%, 48%, 0.8);
     --yellow:hsla(58, 100%, 69%, 0.7);
     --unitbg:hsla(0, 0%, 100%, 0.6);
-    --border:hsla(0, 0%, 27%, 0.8);
+    --black: hsl(0, 0%, 40%);
 }
 
 * {
@@ -31,9 +31,12 @@ body::after {
 }
 
 h1 {
-	font-size: 1.7vw;
+    font-family: "Special Elite", 'Courier New', Courier;
+    font-size: 1.7vw;
+    line-height: 1.55em;
 	padding: 1em 1em 0;
-	text-align: right;
+    text-align: right;
+    color: var(--black);
 }
 
 .clock {
@@ -45,7 +48,7 @@ h1 {
 }
 
 .row > div {
-    border: 1px solid var(--border);
+    border: 1px solid var(--black);
 }
 
 .unit {
@@ -59,9 +62,13 @@ h1 {
 .second-row {
     width: 20vw;
     margin: 0 auto;
-    transform: rotate(15deg) translateY(0%);
+    transform: rotate(15deg) translateY(2px);
     transform-origin: bottom left;
     box-shadow: 3px 7px 8px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.second-row .unit {
+    border-width: 2px;
 }
 
 .second-row .unit.on {
