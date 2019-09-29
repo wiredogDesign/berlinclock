@@ -19,6 +19,7 @@ body {
     align-items: center;
     position: relative;
     font-family: "Special Elite", 'Courier New', Courier;
+    color: var(--white);
 }
 
 body::after {
@@ -32,6 +33,10 @@ body::after {
     /* filter: blur(2px); */
 }
 
+a {
+    color: var(--white);
+}
+
 h1 {
     font-size: 1.7vw;
     line-height: 1.55em;
@@ -42,6 +47,7 @@ h1 {
 
 .clock {
     width: 100vw;
+    height: 87vh
 }
 
 .row {
@@ -101,15 +107,25 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 10vh;
+    height: 13vh;
     padding: 1em;
-    background: var(--black);
-    color: var(--white);	
+    background: var(--black);	
 }
 
-a {
-	color: var(--black);
-	background: white;
-	padding: .4em .4em .2em;
-	border-radius: .4em;
+@media all and (max-device-width: 400px) {
+    .second-row {
+        width: 50vw;
+    }
+
+    h1 {
+        font-size: 3.7vw;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer > div {
+        margin-bottom: 1em;
+    }
 }
