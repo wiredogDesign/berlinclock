@@ -18,13 +18,13 @@
 		"oF": 0
 		},
 	"/css/custom.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
-		"ma": 1,
+		"ma": 0,
 		"oA": 0,
 		"oAP": "/css/custom.min.css",
-		"oF": 2,
+		"oF": 0,
 		"oS": 3
 		},
 	"/css/custom.min.css": {
@@ -36,22 +36,6 @@
 		"oAP": "/css/custom.min.min.css",
 		"oF": 0,
 		"oS": 3
-		},
-	"/css/custom.min.css.gz": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/custom.min.css.gz",
-		"oF": 0
-		},
-	"/css/custom.min.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/custom.min.css.map",
-		"oF": 0
 		},
 	"/favicon.ico": {
 		"cB": 0,
