@@ -4,7 +4,7 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "FB3E3B44-94CF-425F-95D4-718755A9DA43"
+		"uuidString": "4CF37AFB-1EDE-4249-A459-EE8A2D822772"
 		}
 	],
 "creatorBuild": "31491",
@@ -18,22 +18,12 @@
 		"oF": 0
 		},
 	"/css/custom.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/css/custom.min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/css/custom.min.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/css/custom.min.min.css",
+		"oAP": "/css/custom-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -46,6 +36,14 @@
 		"oAP": "/css/custom.min-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/css/custom.min.css.gz": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/css/custom.min.css.gz",
+		"oF": 0
 		},
 	"/favicon.ico": {
 		"cB": 0,
@@ -84,7 +82,7 @@
 		"oAP": "/img/wiredog_animated.svg",
 		"oF": 0,
 		"opt": 0,
-		"plM": 3758088159,
+		"plM": 52780316221407,
 		"prP": 0
 		},
 	"/index.html": {
@@ -110,32 +108,23 @@
 "hooks": [
 	{
 		"enabled": 1,
-		"name": "Gzip CSS",
-		"predicateDataBase64Encoded": "YnBsaXN0MDDUAQIDBAUGZWZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QFgcIDxQcJicqMTU6Oz5CRktMT1ZcYGJVJG51bGzTCQoLDA0OXxAXTlNDb21wb3VuZFByZWRpY2F0ZVR5cGVfEA9OU1N1YnByZWRpY2F0ZXNWJGNsYXNzEAKAAoAV0hALERNaTlMub2JqZWN0c6ESgAOAFNQLFRYXGBkaG18QEU5TUmlnaHRFeHByZXNzaW9uXxAQTlNMZWZ0RXhwcmVzc2lvbl8QE05TUHJlZGljYXRlT3BlcmF0b3KAE4AOgASAEdUdHh8gCyEiIyQlWU5TT3BlcmFuZF5OU1NlbGVjdG9yTmFtZV8QEE5TRXhwcmVzc2lvblR5cGVbTlNBcmd1bWVudHOABoAFEAOACIANXHZhbHVlRm9yS2V5OtIfCygpEAGAB9IrLC0uWiRjbGFzc25hbWVYJGNsYXNzZXNfEBBOU1NlbGZFeHByZXNzaW9uoy0vMFxOU0V4cHJlc3Npb25YTlNPYmplY3TSEAsyNKEzgAmADNMLHzY3ODlZTlNLZXlQYXRogAsQCoAKXWlucHV0RmlsZW5hbWXSKyw8PV8QHE5TS2V5UGF0aFNwZWNpZmllckV4cHJlc3Npb26jPC8w0issP0BeTlNNdXRhYmxlQXJyYXmjP0EwV05TQXJyYXnSKyxDRF8QE05TS2V5UGF0aEV4cHJlc3Npb26kQ0UvMF8QFE5TRnVuY3Rpb25FeHByZXNzaW9u00cfC0hJSl8QD05TQ29uc3RhbnRWYWx1ZYAPEACAEFNjc3PSKyxNTl8QGU5TQ29uc3RhbnRWYWx1ZUV4cHJlc3Npb26jTS8w1QtQUVJTVEkjKFVaTlNNb2RpZmllcldOU0ZsYWdzWk5TUG9zaXRpb25eTlNPcGVyYXRvclR5cGWAEhAJ0issV1hfEBxOU1N1YnN0cmluZ1ByZWRpY2F0ZU9wZXJhdG9ypFlaWzBfEBxOU1N1YnN0cmluZ1ByZWRpY2F0ZU9wZXJhdG9yXxAZTlNTdHJpbmdQcmVkaWNhdGVPcGVyYXRvcl8QE05TUHJlZGljYXRlT3BlcmF0b3LSKyxdXl8QFU5TQ29tcGFyaXNvblByZWRpY2F0ZaNdXzBbTlNQcmVkaWNhdGXSKyxBYaJBMNIrLGNkXxATTlNDb21wb3VuZFByZWRpY2F0ZaNjXzBfEA9OU0tleWVkQXJjaGl2ZXLRZ2hUcm9vdIABAAgAEQAaACMALQAyADcAUABWAF0AdwCJAJAAkgCUAJYAmwCmAKgAqgCsALUAyQDcAPIA9AD2APgA+gEFAQ8BHgExAT0BPwFBAUMBRQFHAVQBWQFbAV0BYgFtAXYBiQGNAZoBowGoAaoBrAGuAbUBvwHBAcMBxQHTAdgB9wH7AgACDwITAhsCIAI2AjsCUgJZAmsCbQJvAnECdQJ6ApYCmgKlArACuALDAtIC1ALWAtsC+gL/Ax4DOgNQA1UDbQNxA30DggOFA4oDoAOkA7YDuQO+AAAAAAAAAgEAAAAAAAAAaQAAAAAAAAAAAAAAAAAAA8A=",
+		"name": "Zip CSS",
+		"predicateDataBase64Encoded": "YnBsaXN0MDDUAQIDBAUGZWZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QFgcIDxQcJicqMTU6Oz5CRktMT1ZcYGJVJG51bGzTCQoLDA0OXxAXTlNDb21wb3VuZFByZWRpY2F0ZVR5cGVfEA9OU1N1YnByZWRpY2F0ZXNWJGNsYXNzEAKAAoAV0hALERNaTlMub2JqZWN0c6ESgAOAFNQLFRYXGBkaG18QEU5TUmlnaHRFeHByZXNzaW9uXxAQTlNMZWZ0RXhwcmVzc2lvbl8QE05TUHJlZGljYXRlT3BlcmF0b3KAE4AOgASAEdUdHh8gCyEiIyQlWU5TT3BlcmFuZF5OU1NlbGVjdG9yTmFtZV8QEE5TRXhwcmVzc2lvblR5cGVbTlNBcmd1bWVudHOABoAFEAOACIANXHZhbHVlRm9yS2V5OtIfCygpEAGAB9IrLC0uWiRjbGFzc25hbWVYJGNsYXNzZXNfEBBOU1NlbGZFeHByZXNzaW9uoy0vMFxOU0V4cHJlc3Npb25YTlNPYmplY3TSEAsyNKEzgAmADNMLHzY3ODlZTlNLZXlQYXRogAsQCoAKXxAUaW5wdXRBYmJyZXZpYXRlZFBhdGjSKyw8PV8QHE5TS2V5UGF0aFNwZWNpZmllckV4cHJlc3Npb26jPC8w0issP0BeTlNNdXRhYmxlQXJyYXmjP0EwV05TQXJyYXnSKyxDRF8QE05TS2V5UGF0aEV4cHJlc3Npb26kQ0UvMF8QFE5TRnVuY3Rpb25FeHByZXNzaW9u00cfC0hJSl8QD05TQ29uc3RhbnRWYWx1ZYAPEACAEFdtaW4uY3Nz0issTU5fEBlOU0NvbnN0YW50VmFsdWVFeHByZXNzaW9uo00vMNULUFFSU1RJIyhVWk5TTW9kaWZpZXJXTlNGbGFnc1pOU1Bvc2l0aW9uXk5TT3BlcmF0b3JUeXBlgBIQCdIrLFdYXxAcTlNTdWJzdHJpbmdQcmVkaWNhdGVPcGVyYXRvcqRZWlswXxAcTlNTdWJzdHJpbmdQcmVkaWNhdGVPcGVyYXRvcl8QGU5TU3RyaW5nUHJlZGljYXRlT3BlcmF0b3JfEBNOU1ByZWRpY2F0ZU9wZXJhdG9y0issXV5fEBVOU0NvbXBhcmlzb25QcmVkaWNhdGWjXV8wW05TUHJlZGljYXRl0issQWGiQTDSKyxjZF8QE05TQ29tcG91bmRQcmVkaWNhdGWjY18wXxAPTlNLZXllZEFyY2hpdmVy0WdoVHJvb3SAAQAIABEAGgAjAC0AMgA3AFAAVgBdAHcAiQCQAJIAlACWAJsApgCoAKoArAC1AMkA3ADyAPQA9gD4APoBBQEPAR4BMQE9AT8BQQFDAUUBRwFUAVkBWwFdAWIBbQF2AYkBjQGaAaMBqAGqAawBrgG1Ab8BwQHDAcUB3AHhAgACBAIJAhgCHAIkAikCPwJEAlsCYgJ0AnYCeAJ6AoIChwKjAqcCsgK9AsUC0ALfAuEC4wLoAwcDDAMrA0cDXQNiA3oDfgOKA48DkgOXA60DsQPDA8YDywAAAAAAAAIBAAAAAAAAAGkAAAAAAAAAAAAAAAAAAAPN",
 		"runOrder": 0,
 		"scriptSourceString": "gzip -f -k $CK_OUTPUT_PATH",
 		"scriptType": 1,
-		"uuidString": "EC4DBAB0-CF5D-4F83-AA06-E118C13701EA"
-		},
-	{
-		"enabled": 1,
-		"name": "Gzip SVG",
-		"predicateDataBase64Encoded": "YnBsaXN0MDDUAQIDBAUGZWZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QFgcIDxQcJicqMTU6Oz5CRktMT1ZcYGJVJG51bGzTCQoLDA0OXxAXTlNDb21wb3VuZFByZWRpY2F0ZVR5cGVfEA9OU1N1YnByZWRpY2F0ZXNWJGNsYXNzEAKAAoAV0hALERNaTlMub2JqZWN0c6ESgAOAFNQLFRYXGBkaG18QEU5TUmlnaHRFeHByZXNzaW9uXxAQTlNMZWZ0RXhwcmVzc2lvbl8QE05TUHJlZGljYXRlT3BlcmF0b3KAE4AOgASAEdUdHh8gCyEiIyQlWU5TT3BlcmFuZF5OU1NlbGVjdG9yTmFtZV8QEE5TRXhwcmVzc2lvblR5cGVbTlNBcmd1bWVudHOABoAFEAOACIANXHZhbHVlRm9yS2V5OtIfCygpEAGAB9IrLC0uWiRjbGFzc25hbWVYJGNsYXNzZXNfEBBOU1NlbGZFeHByZXNzaW9uoy0vMFxOU0V4cHJlc3Npb25YTlNPYmplY3TSEAsyNKEzgAmADNMLHzY3ODlZTlNLZXlQYXRogAsQCoAKXWlucHV0RmlsZW5hbWXSKyw8PV8QHE5TS2V5UGF0aFNwZWNpZmllckV4cHJlc3Npb26jPC8w0issP0BeTlNNdXRhYmxlQXJyYXmjP0EwV05TQXJyYXnSKyxDRF8QE05TS2V5UGF0aEV4cHJlc3Npb26kQ0UvMF8QFE5TRnVuY3Rpb25FeHByZXNzaW9u00cfC0hJSl8QD05TQ29uc3RhbnRWYWx1ZYAPEACAEFNzdmfSKyxNTl8QGU5TQ29uc3RhbnRWYWx1ZUV4cHJlc3Npb26jTS8w1QtQUVJTVEkjKFVaTlNNb2RpZmllcldOU0ZsYWdzWk5TUG9zaXRpb25eTlNPcGVyYXRvclR5cGWAEhAJ0issV1hfEBxOU1N1YnN0cmluZ1ByZWRpY2F0ZU9wZXJhdG9ypFlaWzBfEBxOU1N1YnN0cmluZ1ByZWRpY2F0ZU9wZXJhdG9yXxAZTlNTdHJpbmdQcmVkaWNhdGVPcGVyYXRvcl8QE05TUHJlZGljYXRlT3BlcmF0b3LSKyxdXl8QFU5TQ29tcGFyaXNvblByZWRpY2F0ZaNdXzBbTlNQcmVkaWNhdGXSKyxBYaJBMNIrLGNkXxATTlNDb21wb3VuZFByZWRpY2F0ZaNjXzBfEA9OU0tleWVkQXJjaGl2ZXLRZ2hUcm9vdIABAAgAEQAaACMALQAyADcAUABWAF0AdwCJAJAAkgCUAJYAmwCmAKgAqgCsALUAyQDcAPIA9AD2APgA+gEFAQ8BHgExAT0BPwFBAUMBRQFHAVQBWQFbAV0BYgFtAXYBiQGNAZoBowGoAaoBrAGuAbUBvwHBAcMBxQHTAdgB9wH7AgACDwITAhsCIAI2AjsCUgJZAmsCbQJvAnECdQJ6ApYCmgKlArACuALDAtIC1ALWAtsC+gL/Ax4DOgNQA1UDbQNxA30DggOFA4oDoAOkA7YDuQO+AAAAAAAAAgEAAAAAAAAAaQAAAAAAAAAAAAAAAAAAA8A=",
-		"runOrder": 1,
-		"scriptSourceString": "gzip -f -k $CK_OUTPUT_PATH",
-		"scriptType": 1,
-		"uuidString": "E2E4F47D-CA6B-43E3-83CA-E4AAE54E8066"
+		"uuidString": "37BE1D4B-55EA-4E85-B4FB-C142F62E0280"
 		}
 	],
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 581548269.01525998,
+	"creationDate": 581543889.49093997,
 	"displayValue": "Berlin_Clock",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "/favicon.ico",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 581548606.29608297
+	"lastBuiltDate": 581547757.36236203
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -423,11 +412,11 @@
 		},
 	"babelRetainLines": 0,
 	"babelUseBuiltInsType": 0,
-	"bowerAbbreviatedPath": "js/bower/",
+	"bowerAbbreviatedPath": "bower_components",
 	"bowerForceLatestOnConflict": 1,
 	"bowerTargetDependencyListType": 1,
 	"bowerUseExactVersion": 0,
-	"browserRefreshDelay": 1,
+	"browserRefreshDelay": 0,
 	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
 	"buildFolderActive": 0,
 	"buildFolderName": "build",
@@ -836,7 +825,7 @@
 			},
 		"new-parens": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "'always'"
 			},
 		"newline-per-chained-call": {
 			"active": 0,
@@ -888,7 +877,7 @@
 			},
 		"no-confusing-arrow": {
 			"active": 0,
-			"optionString": "{'allowParens': false}"
+			"optionString": "{'allowParens': true}"
 			},
 		"no-console": {
 			"active": 1,
@@ -1512,7 +1501,7 @@
 			},
 		"sort-keys": {
 			"active": 0,
-			"optionString": "'asc', {'caseSensitive': true, 'natural': false}"
+			"optionString": "'asc', {'caseSensitive': true, 'natural': false, 'minKeys': 2}"
 			},
 		"sort-vars": {
 			"active": 0,
@@ -1602,7 +1591,7 @@
 	"esLintSourceType": 0,
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
-	"hideConfigFile": 1,
+	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
 		"asi": {
@@ -1967,14 +1956,14 @@
 		},
 	"languageDefaultsCSS": {
 		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.min.css",
+		"autoOutputPathFilenamePattern": "*-min.css",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 0,
+		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0
 		},
 	"languageDefaultsGIF": {
@@ -2168,7 +2157,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"pluginMask": 3758088159
+		"pluginMask": 52780316221407
 		},
 	"languageDefaultsTS": {
 		"autoOutputAction": 0,
