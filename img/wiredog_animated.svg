@@ -1,0 +1,181 @@
+<svg x="0" y="0" width="125" height="125" viewBox="0 0 125 125" xmlns="http://www.w3.org/2000/svg">
+    <g>
+        <title>head</title>
+        <path fill="none" stroke="#333333" stroke-linecap="round" d="M45.44,91.667C31.833,91.5,12.4,77.6,12.4,59.4 c0-29.7,22.5-53.8,50.2-53.8c27.7,0,50.2,24.1,50.2,53.8c0,18.2-17.581,32.1-33.24,32.267" class="hGixReen_5" style="">
+            <title>face</title>
+        </path>
+        <path fill="none" stroke="#EA1515" d="M48.8,50.5c0,5.7-4.6,10.4-10.4,10.4c-5.7,0-10.4-4.6-10.4-10.4 c0-5.7,4.6-10.4,10.4-10.4C44.1,40.1,48.8,44.8,48.8,50.5z" class="hGixReen_2">
+            <title>eye</title>
+        </path>
+        <path fill="#333333" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" d="M54.4,66.5L62.6,74.7L 70.8,66.5Z" class="hGixReen_1" style="">
+            <title>nose</title>
+        </path>
+        <path fill="none" stroke="#333333" stroke-linecap="round" d="M25.7,111.3L62.5,74.7L99.3,111.3" class="hGixReen_0" style="">
+            <title>mouth</title>
+        </path>
+        <path fill="none" stroke="#333333" stroke-linecap="round" d="M95.7,19c9.5,6.1,18,14.2,22.2,24.7 c1.199,3,2.5,6,3.199,9.1c2,9.1,2,18.5-0.5,27.5C118.2,88.9,113.9,96.9,107.9,103.6c-2.601,2.9-5.5,5.5-8.601,7.801" class="hGixReen_3" style="">
+            <title>ear_r</title>
+        </path>
+        <path fill="none" stroke="#333333" stroke-linecap="round" d="M29.3,19c-9.5,6.1-17.9,14.2-22.1,24.7 c-1.2,3-2.5,6-3.2,9.1c-2,9.1-2,18.5,0.5,27.5C6.9,88.9,11.2,96.9,17.2,103.6c2.6,2.9,5.5,5.5,8.6,7.801" class="hGixReen_4">
+            <title>ear_l</title>
+        </path>
+    </g>
+    <g>
+        <title>wiredog</title>
+        <path fill="#EA1515" d="M36.878,108.736l3.042,2.95c0.84,0.814,0.86,2.175-0.026,3.089c-0.489,0.505-1.183,0.809-1.901,0.691 c0.14,0.715-0.145,1.418-0.633,1.922c-0.887,0.915-2.247,0.936-3.087,0.121l-3.042-2.95l0.797-0.821l2.855,2.77 c0.569,0.553,1.24,0.588,1.711,0.104c0.516-0.533,0.553-1.168-0.213-1.91l-2.725-2.643l0.796-0.821l2.726,2.643 c0.765,0.742,1.398,0.687,1.914,0.155c0.471-0.485,0.414-1.156-0.154-1.709l-2.856-2.77L36.878,108.736z" class="hGixReen_6">
+            <title>w</title>
+        </path>
+        <path fill="#EA1515" d="M37.086,105.533c0.307-0.316,0.721-0.259,0.974-0.014c0.252,0.244,0.322,0.656,0.015,0.974 s-0.722,0.259-0.974,0.015C36.848,106.264,36.778,105.852,37.086,105.533z M42.661,111.736l-4.48-4.344l0.797-0.821l4.479,4.345 L42.661,111.736z" class="hGixReen_7">
+            <title>i</title>
+        </path>
+        <path fill="#EA1515" d="M40.235,105.274l0.761-0.784l0.513,0.498l0.019-0.02c-0.167-0.705,0.036-1.25,0.57-1.801l0.181-0.188 l0.784,0.761l-0.118,0.122c-0.77,0.793-0.736,1.729,0.478,2.906l2.091,2.027l-0.797,0.822L40.235,105.274z" class="hGixReen_8">
+            <title>r</title>
+        </path>
+        <path fill="#EA1515" d="M47.051,104.26l-0.979-0.298l0.913-3.406c-0.552,0.008-0.928,0.097-1.416,0.601 c-0.824,0.85-0.787,2.08,0.128,2.968s2.147,0.886,2.97,0.038c0.941-0.971,0.717-1.896,0.058-2.861l0.907-0.73 c1.096,1.242,1.068,3.062-0.181,4.352c-1.204,1.24-3.205,1.4-4.587,0.061c-1.381-1.339-1.283-3.345-0.079-4.586 c1.014-1.045,2.243-1.212,3.519-0.79L47.051,104.26z" class="hGixReen_9">
+            <title>e</title>
+        </path>
+        <path fill="#EA1515" d="M50,91.096l4.164,4.037c1.474,1.43,1.549,3.33,0.273,4.646c-1.412,1.455-3.365,1.229-4.691-0.057 c-1.25-1.213-1.242-3.162-0.129-4.31c0.434-0.448,0.943-0.787,1.548-0.962l0.858,0.832c-0.495,0.1-1.125,0.377-1.487,0.75 c-0.86,0.887-0.813,2.072,0.11,2.968c0.914,0.887,2.156,0.896,3.007,0.019c0.76-0.784,0.796-2.018-0.436-3.211l-4.014-3.893 L50,91.096z" class="hGixReen_10">
+            <title>d</title>
+        </path>
+        <path fill="#EA1515" d="M54.84,90.027c1.203-1.24,3.205-1.4,4.586-0.061c1.381,1.338,1.283,3.345,0.08,4.586 c-1.205,1.242-3.206,1.4-4.588,0.062C53.538,93.275,53.635,91.27,54.84,90.027z M58.722,93.793c0.823-0.85,0.786-2.08-0.128-2.968 c-0.916-0.888-2.147-0.886-2.971-0.037c-0.824,0.85-0.787,2.081,0.129,2.968C56.667,94.643,57.898,94.643,58.722,93.793z" class="hGixReen_11">
+            <title>o</title>
+        </path>
+        <path fill="#EA1515" d="M65.279,88.002c-0.131,0.471-0.426,1.035-0.725,1.344c-1.266,1.307-3.214,1.373-4.521,0.106 c-1.344-1.304-1.502-3.231-0.145-4.632c1.321-1.362,3.236-1.135,4.357-0.049l1.996,1.938c1.68,1.629,1.488,3.434,0.211,4.75 c-0.488,0.504-1.07,0.898-1.691,1.221l-0.555-0.92c0.51-0.303,1.02-0.604,1.428-1.024c0.715-0.737,1.184-1.876,0.092-2.935 l-2.09-2.026c-1.007-0.978-2.257-0.921-3-0.156c-0.951,0.98-0.638,2.208,0.239,3.058c0.878,0.852,2.08,0.75,2.905-0.1 c0.361-0.373,0.527-0.9,0.648-1.398L65.279,88.002z" class="hGixReen_12">
+            <title>g</title>
+        </path>
+    </g>
+    <g>
+        <title>design</title>
+        <path d="M72.645,67.745l4.162,4.037c1.475,1.43,1.551,3.331,0.273,4.646c-1.412,1.456-3.363,1.229-4.689-0.056 c-1.25-1.213-1.242-3.162-0.131-4.311c0.436-0.447,0.945-0.787,1.549-0.961l0.859,0.832c-0.496,0.1-1.127,0.377-1.488,0.75 c-0.859,0.887-0.812,2.071,0.111,2.967c0.914,0.887,2.154,0.896,3.006,0.019c0.76-0.784,0.797-2.017-0.436-3.211l-4.014-3.892 L72.645,67.745z" class="hGixReen_13">
+            <title>d</title>
+        </path>
+        <path d="M79.758,70.532l-0.979-0.298l0.912-3.406c-0.551,0.008-0.928,0.097-1.416,0.601c-0.822,0.849-0.787,2.081,0.129,2.968 c0.914,0.887,2.146,0.887,2.971,0.037c0.941-0.971,0.715-1.896,0.057-2.86l0.908-0.731c1.094,1.243,1.066,3.064-0.182,4.352 c-1.203,1.24-3.205,1.4-4.586,0.062c-1.381-1.34-1.283-3.347-0.08-4.588c1.014-1.045,2.242-1.211,3.518-0.789L79.758,70.532z" class="hGixReen_14">
+            <title>e</title>
+        </path>
+        <path d="M84.041,67.496l2.227-2.295c0.371-0.383,0.365-0.676,0.086-0.948c-0.82-0.796-3.246,2.339-4.795,0.837 c-0.793-0.77-0.68-1.728,0.271-2.708l1.873-1.932l0.783,0.76l-2.01,2.073c-0.389,0.4-0.393,0.63-0.123,0.91 c0.766,0.762,3.189-2.392,4.795-0.836c0.85,0.824,0.672,1.811-0.098,2.604l-2.227,2.296L84.041,67.496z" class="hGixReen_15">
+            <title>s</title>
+        </path>
+        <path d="M83.875,57.286c0.307-0.317,0.721-0.26,0.975-0.015c0.252,0.244,0.322,0.657,0.014,0.975 c-0.307,0.317-0.721,0.259-0.973,0.015C83.637,58.015,83.566,57.603,83.875,57.286z M89.449,63.488l-4.479-4.344l0.795-0.821 l4.48,4.344L89.449,63.488z" class="hGixReen_16">
+            <title>i</title>
+        </path>
+        <path d="M94.457,57.913c-0.131,0.471-0.426,1.037-0.725,1.345c-1.266,1.306-3.215,1.374-4.521,0.106 c-1.344-1.303-1.502-3.232-0.145-4.631c1.322-1.363,3.236-1.135,4.357-0.049l1.996,1.937c1.68,1.629,1.488,3.434,0.211,4.75 c-0.488,0.504-1.07,0.899-1.691,1.221l-0.555-0.919c0.51-0.303,1.02-0.604,1.428-1.025c0.715-0.737,1.184-1.875,0.092-2.934 l-2.09-2.027c-1.008-0.978-2.258-0.921-3-0.156c-0.951,0.98-0.637,2.207,0.24,3.058c0.877,0.851,2.08,0.75,2.904-0.1 c0.361-0.373,0.527-0.9,0.648-1.398L94.457,57.913z" class="hGixReen_17">
+            <title>g</title>
+        </path>
+        <path d="M96.545,56.171l-2.613-2.535c-1.176-1.14-1.162-2.722-0.104-3.813c1.059-1.092,2.639-1.153,3.814-0.014l2.613,2.535 l-0.797,0.821l-2.613-2.535c-0.689-0.669-1.664-0.636-2.234-0.047c-0.57,0.588-0.574,1.562,0.117,2.231l2.613,2.535L96.545,56.171z " class="hGixReen_18">
+            <title>n</title>
+        </path>
+    </g>
+    <style>
+	.hGixReen_0 {
+		stroke-dasharray: 104 106;
+		stroke-dashoffset: 105;
+		animation: hGixReen_draw 301ms ease-out 0ms forwards;
+	}
+	.hGixReen_1 {
+		stroke-dasharray: 40 42;
+		stroke-dashoffset: 41;
+		animation: hGixReen_draw 117ms ease-out 301ms forwards;
+	}
+	.hGixReen_2 {
+		stroke-dasharray: 66 68;
+		stroke-dashoffset: 67;
+		animation: hGixReen_draw 192ms ease-out 418ms forwards;
+	}
+	.hGixReen_3 {
+		stroke-dasharray: 110 112;
+		stroke-dashoffset: 111;
+		animation: hGixReen_draw 318ms ease-out 611ms forwards;
+	}
+	.hGixReen_4 {
+		stroke-dasharray: 110 112;
+		stroke-dashoffset: 111;
+		animation: hGixReen_draw 318ms ease-out 929ms forwards;
+	}
+	.hGixReen_5 {
+		stroke-dasharray: 265 267;
+		stroke-dashoffset: 266;
+		animation: hGixReen_draw 763ms ease-out 1248ms forwards;
+	}
+	.hGixReen_6 {
+		stroke-dasharray: 47 49;
+		stroke-dashoffset: 48;
+		animation: hGixReen_draw 137ms ease-out 2011ms forwards;
+	}
+	.hGixReen_7 {
+		stroke-dasharray: 20 22;
+		stroke-dashoffset: 21;
+		animation: hGixReen_draw 60ms ease-out 2149ms forwards;
+	}
+	.hGixReen_8 {
+		stroke-dasharray: 20 22;
+		stroke-dashoffset: 21;
+		animation: hGixReen_draw 60ms ease-out 2209ms forwards;
+	}
+	.hGixReen_9 {
+		stroke-dasharray: 41 43;
+		stroke-dashoffset: 42;
+		animation: hGixReen_draw 120ms ease-out 2269ms forwards;
+	}
+	.hGixReen_10 {
+		stroke-dasharray: 43 45;
+		stroke-dashoffset: 44;
+		animation: hGixReen_draw 126ms ease-out 2390ms forwards;
+	}
+	.hGixReen_11 {
+		stroke-dasharray: 34 36;
+		stroke-dashoffset: 35;
+		animation: hGixReen_draw 100ms ease-out 2516ms forwards;
+	}
+	.hGixReen_12 {
+		stroke-dasharray: 49 51;
+		stroke-dashoffset: 50;
+		animation: hGixReen_draw 143ms ease-out 2616ms forwards;
+	}
+	.hGixReen_13 {
+		stroke-dasharray: 43 45;
+		stroke-dashoffset: 44;
+		animation: hGixReen_draw 126ms ease-out 2760ms forwards;
+	}
+	.hGixReen_14 {
+		stroke-dasharray: 41 43;
+		stroke-dashoffset: 42;
+		animation: hGixReen_draw 120ms ease-out 2886ms forwards;
+	}
+	.hGixReen_15 {
+		stroke-dasharray: 33 35;
+		stroke-dashoffset: 34;
+		animation: hGixReen_draw 97ms ease-out 3006ms forwards;
+	}
+	.hGixReen_16 {
+		stroke-dasharray: 20 22;
+		stroke-dashoffset: 21;
+		animation: hGixReen_draw 60ms ease-out 3104ms forwards;
+	}
+	.hGixReen_17 {
+		stroke-dasharray: 49 51;
+		stroke-dashoffset: 50;
+		animation: hGixReen_draw 143ms ease-out 3164ms forwards;
+	}
+	.hGixReen_18 {
+		stroke-dasharray: 31 33;
+		stroke-dashoffset: 32;
+		animation: hGixReen_draw 91ms ease-out 3308ms forwards;
+	}
+@keyframes hGixReen_draw {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes hGixReen_fade {
+    0% {
+        stroke-opacity: 1;
+    }
+    94.73684210526316% {
+        stroke-opacity: 1;
+    }
+    100% {
+        stroke-opacity: 0;
+    }
+}
+</style>
+</svg>

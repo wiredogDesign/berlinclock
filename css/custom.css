@@ -79,6 +79,7 @@ h1 {
 
 .second-row .unit {
     border-width: 2px;
+    min-height: 100px;
 }
 
 .second-row .unit.on {
