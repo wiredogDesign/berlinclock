@@ -28,7 +28,7 @@ body::after {
     bottom: 0;
     z-index: -1;
     width: 100vw; height: 100vh;
-    background: 0 -13vh / cover url('../img/kudamm.jpg') no-repeat;
+    background: 0 -13vh / cover url('../img/budapester.jpg') no-repeat;
 }
 
 a {
