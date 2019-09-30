@@ -28,9 +28,7 @@ body::after {
     bottom: 0;
     z-index: -1;
     width: 100vw; height: 100vh;
-    background: url('../img/kudamm.jpg') no-repeat;
-    background-size: cover;
-    /* filter: blur(2px); */
+    background: 0 -13vh / cover url('../img/kudamm.jpg') no-repeat;
 }
 
 a {
@@ -104,7 +102,7 @@ h1 {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100vw;
     height: 13vh;
@@ -119,13 +117,5 @@ footer {
 
     h1 {
         font-size: 3.7vw;
-    }
-
-    footer {
-        flex-direction: column;
-    }
-
-    footer > div {
-        margin-bottom: 1em;
     }
 }
