@@ -5,6 +5,7 @@
     --unitbg:hsla(0, 0%, 100%, 0.6);
     --white: hsl(0, 0%, 90%);
     --black: hsl(0, 0%, 40%);
+    --green: hsl(137, 89%, 25%);
 }
 
 * {
@@ -64,7 +65,7 @@ h1 {
 .unit {
     display: inline-block;
     width: 100%;
-    height: 18vh;
+    height: 17.4vh;
     background: var(--unitbg);
     box-shadow: inset 0 0 6px 0 hsla(0, 0%, 0%, 0.3);
 }
