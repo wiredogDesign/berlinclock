@@ -17,24 +17,14 @@
 		"oAP": "/css/.sass-cache/d26d175e136b59889026356f33b7957f14708d4e/custom.scssc",
 		"oF": 0
 		},
-	"/css/custom-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/css/custom-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/css/custom.css": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/css/custom-min.css",
-		"oF": 0,
+		"oAP": "/css/custom.min.css",
+		"oF": 2,
 		"oS": 3
 		},
 	"/css/custom.min.css": {
@@ -46,14 +36,6 @@
 		"oAP": "/css/custom.min-min.css",
 		"oF": 0,
 		"oS": 3
-		},
-	"/css/custom.min.css.gz": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/custom.min.css.gz",
-		"oF": 0
 		},
 	"/favicon.ico": {
 		"cB": 0,
