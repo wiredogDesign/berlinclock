@@ -110,7 +110,7 @@ h1 {
 footer {
     width: 100vw;
     height: 13vh;
-    background: var(--black);	
+    background: 98% .5em / 100px no-repeat url(../img/wiredog_animated.svg), var(--black);	
 }
 
 @media all and (max-device-width: 400px) {
