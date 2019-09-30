@@ -110,7 +110,12 @@ h1 {
 footer {
     width: 100vw;
     height: 13vh;
-    background: 98% .5em / 100px no-repeat url(../img/wiredog_animated.svg), var(--black);	
+    background-color: var(--black);
+    transition: background-color .4s ease;
+}
+
+footer:hover {
+    background-color: var(--green);
 }
 
 @media all and (max-device-width: 400px) {
