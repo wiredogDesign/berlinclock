@@ -23,8 +23,8 @@
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/css/custom-min.css",
-		"oF": 0,
+		"oAP": "/css/custom.min.css",
+		"oF": 2,
 		"oS": 3
 		},
 	"/favicon.ico": {
