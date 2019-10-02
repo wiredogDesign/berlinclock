@@ -31,6 +31,7 @@ body::after {
     width: 100vw; height: 100vh;
     background: 0 -13vh / cover url('../img/kudamm.jpg') no-repeat;
     -webkit-mask-box-image: url('../img/kurt_baar.png');
+    -webkit-mask-box-image-width: 100%;
     mask-image: url(../img/kurt_baar.png);
     mask-repeat: no-repeat;
     mask-size: cover;
