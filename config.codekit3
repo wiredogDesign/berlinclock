@@ -17,26 +17,6 @@
 		"oAP": "/css/.sass-cache/d26d175e136b59889026356f33b7957f14708d4e/custom.scssc",
 		"oF": 0
 		},
-	"/css/custom.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/css/custom.min.css",
-		"oF": 2,
-		"oS": 3
-		},
-	"/css/custom.min.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/css/custom.min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/favicon.ico": {
 		"cB": 0,
 		"ft": 8192,
