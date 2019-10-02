@@ -30,6 +30,10 @@ body::after {
     z-index: -1;
     width: 100vw; height: 100vh;
     background: 0 -13vh / cover url('../img/budapester.jpg') no-repeat;
+    mask-image: url(../img/kurt_baar.png);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-type: alpha;
 }
 
 a {
