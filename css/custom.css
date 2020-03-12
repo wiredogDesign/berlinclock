@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: "Special Elite";
-    src: url("fonts/SpecialElite.woff2") format("woff2")
+    src: url("/fonts/SpecialElite.woff2") format("woff2")
 }
 
 * {
