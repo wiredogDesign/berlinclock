@@ -8,6 +8,11 @@
     --green: hsl(137, 89%, 25%);
 }
 
+@font-face {
+    font-family: "Special Elite";
+    src: url("fonts/SpecialElite.woff2") format("woff2")
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
