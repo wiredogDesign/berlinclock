@@ -64,6 +64,19 @@ h1 {
     mask-type: alpha; */
 }
 
+.miniflag {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 1em;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--black);
+    border-radius: 50%;
+    background: linear-gradient(black, black 33%, red 33%, red 66%, yellow 66%);
+}
+
 .row {
     display: flex;
 }
@@ -78,6 +91,10 @@ h1 {
     height: 17.4vh;
     background: var(--unitbg);
     box-shadow: inset 0 0 6px 0 hsla(0, 0%, 0%, 0.3);
+}
+
+.second-row {
+    position: relative;
 }
 
 .second-row .unit {
