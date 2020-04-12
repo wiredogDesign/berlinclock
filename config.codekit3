@@ -48,6 +48,13 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/custom.min.css.gz": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/css\/custom.min.css.gz",
+		"oF": 0
+		},
 	"\/favicon.ico": {
 		"cB": 0,
 		"ft": 8192,
@@ -113,12 +120,19 @@
 	"\/img\/paper.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/img\/paper.svg",
-		"oF": 0,
-		"opt": 0,
+		"oF": 1,
+		"opt": 1,
 		"plM": 52797496090591,
 		"prP": 0
+		},
+	"\/img\/paper.svg.gz": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/img\/paper.svg.gz",
+		"oF": 0
 		},
 	"\/img\/wiredog_animated.svg": {
 		"ft": 2097152,
