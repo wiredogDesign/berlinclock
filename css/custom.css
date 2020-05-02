@@ -8,10 +8,10 @@
     --green: hsl(137, 89%, 25%);
 }
 
-@font-face {
+/* @font-face {
     font-family: "Special Elite";
     src: url("/fonts/SpecialElite.woff2") format("woff2")
-}
+} */
 
 * {
     box-sizing: border-box;
@@ -24,7 +24,7 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-    font-family: "Special Elite", 'Courier New', Courier;
+    font-family: "Dosis", "Special Elite", 'Courier New', Courier;
     color: var(--white);
 }
 
