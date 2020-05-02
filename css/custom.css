@@ -1,7 +1,7 @@
 :root {
     --red:hsla(0, 100%, 48%, 0.7);
     --orange:hsla(30, 100%, 48%, 0.8);
-    --yellow:hsla(58, 100%, 69%, 0.7);
+    --yellow:hsla(58, 100%, 69%, 0.8);
     --unitbg:hsla(0, 0%, 100%, 0.6);
     --white: hsl(0, 0%, 90%);
     --black: hsl(0, 0%, 40%);
@@ -28,13 +28,34 @@ body {
     color: var(--white);
 }
 
-body::after {
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 100%;
+    color: var(--white);
+}
+
+h1 {
+    font-size: 2.4vw;
+	padding-right: .5em;
+    color: var(--black);
+}
+
+.clock {
+    width: 100vw;
+    height: 87vh
+}
+
+.clock::after {
     content: '';
     position: absolute;
     bottom: 0;
     z-index: -1;
-    width: 100vw; height: 100vh;
-    background: 0 -13vh / cover url('../img/kudamm.jpg') no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background: 0 / cover url('../img/kudamm.jpg') no-repeat;
     /* -webkit-mask-box-image: url('../img/kurt_baar.png');
     -webkit-mask-box-image-width: 100%;
     mask-image: url(../img/kurt_baar.png);
@@ -43,26 +64,17 @@ body::after {
     mask-type: alpha; */
 }
 
-a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    color: var(--white);
-}
-
-h1 {
-    font-size: 1.7vw;
-    line-height: 1.55em;
-	padding: 1em 1em 0;
-    text-align: right;
-    color: var(--black);
-}
-
-.clock {
-    width: 100vw;
-    height: 87vh
+.miniflag {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 1em;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--black);
+    border-radius: 50%;
+    background: linear-gradient(black, black 33%, red 33%, red 66%, yellow 66%);
 }
 
 .row {
@@ -82,16 +94,19 @@ h1 {
 }
 
 .second-row {
-    width: 20vw;
-    margin: 0 auto;
-    transform: rotate(15deg) translateY(2px);
-    transform-origin: bottom left;
-    box-shadow: 3px 7px 8px 0 hsla(0, 0%, 0%, 0.2);
+    position: relative;
 }
 
 .second-row .unit {
-    border-width: 2px;
+    min-width: 100vw;
     min-height: 100px;
+    border-width: 0;
+}
+
+.sec {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .second-row .unit.on {
@@ -130,10 +145,6 @@ footer:hover {
 }
 
 @media all and (max-device-width: 400px) {
-    .second-row {
-        width: 50vw;
-    }
-
     h1 {
         font-size: 3.7vw;
     }
