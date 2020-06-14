@@ -120,6 +120,24 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/paper.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/paper.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/paper.svg.gz": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/paper.svg.gz",
+		"oF": 0
+		},
 	"/img/wiredog_animated.svg": {
 		"ft": 2097152,
 		"miP": 0,
