@@ -1,11 +1,14 @@
 :root {
-    --red:hsla(0, 100%, 48%, 0.7);
-    --orange:hsla(30, 100%, 48%, 0.8);
-    --yellow:hsla(58, 100%, 69%, 0.7);
-    --unitbg:hsla(0, 0%, 100%, 0.6);
-    --white: hsl(0, 0%, 90%);
-    --black: hsl(0, 0%, 40%);
-    --green: hsl(137, 89%, 25%);
+    --red:      hsla(0, 100%, 48%, 0.7);
+    --orange:   hsla(30, 100%, 48%, 0.8);
+    --yellow:   hsla(58, 100%, 69%, 0.7);
+    --unitbg:   hsla(0, 0%, 100%, 0.6);
+    --white:    hsl(0, 0%, 90%);
+    --black:    hsl(0, 0%, 40%);
+    --green:    hsl(137, 89%, 25%);
+    --flagb:    hsla(0, 0%, 2%, 0.4);
+    --flagr:    hsla(0, 60%, 43%, 0.4);
+    --flagy:    hsla(58, 100%, 69%, 0.4);
 }
 
 @font-face {
@@ -121,3 +124,4 @@ a {
     -webkit-text-stroke: 0.7px var(--white);
     -webkit-text-fill-color: transparent;
 }
+
