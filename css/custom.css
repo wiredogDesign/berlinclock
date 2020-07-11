@@ -121,13 +121,3 @@ a {
     -webkit-text-stroke: 0.7px var(--white);
     -webkit-text-fill-color: transparent;
 }
-
-@media all and (max-device-width: 400px) {
-    .second-row {
-        width: 50vw;
-    }
-
-    h1 {
-        font-size: 3.7vw;
-    }
-}
