@@ -1,0 +1,145 @@
+:root {
+    --red:      hsla(0, 100%, 48%, 0.7);
+    --orange:   hsla(30, 100%, 48%, 0.8);
+    --yellow:   hsla(58, 100%, 69%, 0.7);
+    --unitbg:   hsla(0, 0%, 100%, 0.6);
+    --white:    hsl(0, 0%, 90%);
+    --black:    hsl(0, 0%, 40%);
+    --green:    hsl(137, 89%, 25%);
+    --flagb:    hsl(0, 0%, 2%);
+    --flagr:    hsl(0, 60%, 43%);
+    --flagy:    hsl(58, 100%, 69%);
+}
+
+@font-face {
+    font-family: "Special Elite";
+    src: url("/fonts/SpecialElite.woff2") format("woff2")
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position: relative; */
+    font-family: "Special Elite", 'Courier New', Courier;
+    color: var(--white);
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100vw; height: 100vh;
+    background: 0 -8vh / cover url('../img/kudamm.jpg') no-repeat;
+    /* -webkit-mask-box-image: url('../img/kurt_baar.png');
+    -webkit-mask-box-image-width: 100%;
+    mask-image: url(../img/kurt_baar.png);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-type: alpha; */
+}
+
+.clock {
+    width: 100vw;
+    height: 82vh;
+    margin-top: 5vh;
+}
+
+.row {
+    display: flex;
+}
+
+.row > div {
+    border: 1px solid var(--black);
+}
+
+.unit {
+    display: inline-block;
+    width: 100%;
+    height: 17.4vh;
+    background: var(--unitbg);
+    box-shadow: inset 0 0 6px 0 hsla(0, 0%, 0%, 0.3);
+}
+
+.second-row {
+    justify-content: center;
+}
+
+.second-row .unit {
+    width: 18vh;
+    height: 18vh;
+    border-width: 2px;
+    border-radius: 50%;
+}
+
+.second-row .unit.on {
+    background-color: var(--yellow); 
+}
+
+.hour-top .unit {
+	border-top-width: 2px;
+}
+
+.hour-top .unit.on,
+.hour-bottom .unit.on {
+    background-color: var(--red); 
+}
+
+.minute-top .unit.on,
+.minute-bottom .unit.on {
+    background-color: var(--orange);
+}
+
+.minute-top .unit:nth-child(3).on,
+.minute-top .unit:nth-child(6).on,
+.minute-top .unit:nth-child(9).on {
+    background-color: var(--red);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 8vh;
+    background-color: var(--black);
+    transition: background-color .4s ease;
+}
+
+footer:hover {
+    background-color: var(--green);
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 1.5vh;
+    font-size: clamp(16px, 3vw, 40px);
+    text-decoration: none;
+    -webkit-text-stroke: 0.7px var(--white);
+    -webkit-text-fill-color: transparent;
+}
+
+/* .flag {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, 
+    var(--flagb) 33%, 
+    var(--flagr) 33%, 
+    var(--flagr) 66%, 
+    var(--flagy) 66%, 
+    var(--flagy) 100%);
+} */
