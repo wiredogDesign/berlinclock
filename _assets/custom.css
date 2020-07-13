@@ -11,11 +11,6 @@
     --flagy:    hsl(58, 100%, 69%);
 }
 
-@font-face {
-    font-family: "Special Elite";
-    src: url("/fonts/SpecialElite.woff2") format("woff2")
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
