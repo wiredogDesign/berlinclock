@@ -27,6 +27,17 @@
 		"oF": 2,
 		"oS": 3
 		},
+	"/_assets/custom.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/custom-min.js",
+		"oF": 2,
+		"sC": 0,
+		"tS": 0
+		},
 	"/css/.sass-cache/d26d175e136b59889026356f33b7957f14708d4e/custom.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -44,6 +55,14 @@
 		"oAP": "/css/custom-min-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/css/custom-min.css.gz": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/css/custom-min.css.gz",
+		"oF": 0
 		},
 	"/favicon.ico": {
 		"cB": 0,
@@ -159,25 +178,14 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/js/custom.js": {
+	"/js/jquery-min.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/custom-min.js",
+		"oAP": "/js/jquery-min-min.js",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/jquery.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/jquery.min.js",
-		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		}
@@ -2360,11 +2368,11 @@
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
 		"arguments": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"arrows": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"ascii_only": {
@@ -2372,7 +2380,7 @@
 			"flagValue": -1
 			},
 		"booleans": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"booleans_as_integers": {
@@ -2384,7 +2392,7 @@
 			"flagValue": -1
 			},
 		"collapse_vars": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"comments": {
@@ -2392,23 +2400,23 @@
 			"flagValue": -1
 			},
 		"comparisons": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"computed_props": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"conditionals": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"dead_code": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"directives": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"drop_console": {
@@ -2428,7 +2436,7 @@
 			"flagValue": -1
 			},
 		"evaluate": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"expression": {
@@ -2440,7 +2448,7 @@
 			"flagValue": -1
 			},
 		"hoist_props": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"hoist_vars": {
@@ -2452,7 +2460,7 @@
 			"flagValue": -1
 			},
 		"if_return": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"indent_level": {
@@ -2464,7 +2472,7 @@
 			"flagValue": 0
 			},
 		"inline": {
-			"active": 1,
+			"active": 0,
 			"flagValue": 3
 			},
 		"inline_script": {
@@ -2472,19 +2480,19 @@
 			"flagValue": -1
 			},
 		"join_vars": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"keep_classnames": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"keep_fargs": {
 			"active": 1,
 			"flagValue": -1
 			},
-		"keep_fnames": {
+		"keep_fargs": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"keep_fnames": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"keep_infinity": {
@@ -2496,11 +2504,11 @@
 			"flagValue": -1
 			},
 		"loops": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"max_line_len": {
-			"active": 1,
+			"active": 0,
 			"flagValue": 32000
 			},
 		"module": {
@@ -2508,7 +2516,7 @@
 			"flagValue": -1
 			},
 		"negate_iife": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"passes": {
@@ -2516,7 +2524,7 @@
 			"flagValue": 1
 			},
 		"properties": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"pure_getters": {
@@ -2532,11 +2540,11 @@
 			"flagValue": 0
 			},
 		"reduce_funcs": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"reduce_vars": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"safari10": {
@@ -2548,7 +2556,7 @@
 			"flagValue": -1
 			},
 		"sequences": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"shebang": {
@@ -2556,11 +2564,11 @@
 			"flagValue": -1
 			},
 		"side_effects": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"switches": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"toplevel": {
@@ -2568,7 +2576,7 @@
 			"flagValue": -1
 			},
 		"typeofs": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"unsafe": {
@@ -2608,7 +2616,7 @@
 			"flagValue": -1
 			},
 		"unused": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"warnings": {
@@ -2624,7 +2632,7 @@
 			"flagValue": -1
 			}
 		},
-	"uglifyMangleNames": 1,
+	"uglifyMangleNames": 0,
 	"uglifyReservedNamesString": "$,exports,require",
 	"websiteRelativeRoot": ""
 	},
