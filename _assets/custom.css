@@ -74,7 +74,7 @@ body::after {
     height: 14vh;
     border-width: 2px;
     border-radius: 50%;
-    background: no-repeat url(/img/berlin_baar.svg);
+    background: no-repeat url(../img/berlin_baar.svg);
     animation: secondCount 1s ease-in-out infinite alternate;
 }
 
