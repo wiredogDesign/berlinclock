@@ -74,6 +74,13 @@ body::after {
     height: 14vh;
     border-width: 2px;
     border-radius: 50%;
+    background: no-repeat url(/img/berlin_baar.svg);
+    animation: secondCount 1s ease-in-out infinite alternate;
+}
+
+@keyframes secondCount {
+    0% { transform: rotate(-43deg) }
+    100% { transform: rotate(43deg) }
 }
 
 .second-row .unit.on {
