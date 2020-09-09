@@ -96,6 +96,7 @@ body::after {
     align-items: center;
     width: 0;
     height: 0;
+    margin-right: .5em;
     padding: 20px 20px 14px;
     font-size: 170%;
     color: var(--black);
@@ -111,4 +112,17 @@ a {
     text-decoration: none;
     -webkit-text-stroke: 0.7px var(--white);
     -webkit-text-fill-color: transparent;
+}
+
+/* mobiles don't support flex gap */
+
+@media screen and (max-device-width: 480px) {
+    body:after {
+        top: -80px;
+    }
+
+    .row,
+    .row > div {
+        margin: 1px 1px 0 1px;
+    }
 }
