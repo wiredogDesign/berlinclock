@@ -96,8 +96,8 @@ body::after {
     align-items: center;
     width: 0;
     height: 0;
-    padding: 20px;
-    font-size: 150%;
+    padding: 20px 20px 14px;
+    font-size: 170%;
     color: var(--black);
 }
 
