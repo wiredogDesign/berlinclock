@@ -11,7 +11,7 @@ berlinClock.prototype.update = function (d) {
 };
 
 berlinClock.prototype.current_seconds = function (seconds) {
-    this.dom.find(".second-row > div").toggleClass("on", seconds % 2 === 1);
+    this.dom.find(".sec").toggleClass("on", seconds % 2 === 1);
 };
 
 berlinClock.prototype.current_minutes = function (minutes) {

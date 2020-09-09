@@ -1,7 +1,7 @@
 :root {
     --red:      hsla(0, 100%, 48%, 0.7);
     --orange:   hsla(30, 100%, 48%, 0.8);
-    --yellow:   hsla(58, 100%, 69%, 0.7);
+    --yellow:   hsl(58, 100%, 56%);
     --unitbg:   hsla(0, 0%, 100%, 0.6);
     --white:    hsl(0, 0%, 90%);
     --black:    hsl(0, 0%, 40%);
@@ -40,7 +40,7 @@ body::after {
 .row {
     display: flex;
     gap: 3px;
-    height: calc(100vh / 6 - 2px);
+    height: calc(100vh / 5 - 2px);
 }
 
 .unit {
@@ -58,12 +58,15 @@ body::after {
     transition: background-color .1s ease-in;
 }
 
-.second-row .unit.on {
-    background-color: var(--yellow); 
-}
-
 .hour-top .unit {
 	border-top-width: 2px;
+}
+
+
+/* the <on> colours */
+
+.sec.unit.on {
+    background-color: var(--yellow);
 }
 
 .hour-top .unit.on,
@@ -82,13 +85,23 @@ body::after {
     background-color: var(--red);
 }
 
+/* footery stuff */
+
 .footer {
+    display: flex;
+    align-items: center;
+    padding: 1em;
     background-color: var(--black);
     transition: background-color .4s ease;
 }
 
 .footer:hover {
     background-color: var(--green);
+}
+
+.sec.unit {
+    width: 50px;
+    height: 50px;
 }
 
 a {
