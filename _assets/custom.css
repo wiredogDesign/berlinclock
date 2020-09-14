@@ -1,7 +1,7 @@
 :root {
     --red:      hsla(0, 100%, 48%, 0.7);
     --orange:   hsla(30, 100%, 48%, 0.7);
-    --yellow:   hsl(58, 100%, 56%);
+    --yellow:   hsl(53, 100%, 50%);
     --unitbg:   hsla(0, 0%, 100%, 0.45);
     --white:    hsl(0, 0%, 90%);
     --grey:    hsl(0, 0%, 40%);
@@ -107,7 +107,7 @@ body::after {
     height: 0;
     margin-right: .5em;
     padding: 20px;
-    border-bottom: 4px solid;
+    border-bottom: 7px solid white;
     font-size: 170%;
     color: var(--grey);
 }
