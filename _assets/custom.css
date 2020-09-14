@@ -2,10 +2,10 @@
     --red:      hsla(0, 100%, 48%, 0.7);
     --orange:   hsla(30, 100%, 48%, 0.7);
     --yellow:   hsl(58, 100%, 56%);
-    --unitbg:   hsla(0, 0%, 100%, 0.6);
+    --unitbg:   hsla(0, 0%, 100%, 0.45);
     --white:    hsl(0, 0%, 90%);
-    --black:    hsl(0, 0%, 40%);
-    --blackest: hsl(0, 0%, 25%);
+    --grey:    hsl(0, 0%, 40%);
+    --black: hsl(0, 0%, 25%);
 }
 
 * {
@@ -63,7 +63,7 @@ body::after {
 
 /* the <on> colours */
 .sec.unit.on {
-    background-color: var(--yellow);
+    border-bottom-color: var(--yellow);
 }
 
 .hour-top .unit.on,
@@ -87,16 +87,16 @@ body::after {
     display: grid;
     grid-template-columns: 10% 88%;
     align-items: center;
-    justify-items: end;
+    /* justify-items: end; */
     gap: 10px;
     margin-top: -2px;
     padding: 1em;
-    background-color: var(--black);
+    background-color: var(--grey);
     transition: background-color .4s ease;
 }
 
 .footer:hover {
-    background-color: var(--blackest);
+    background-color: var(--black);
 }
 
 .sec.unit {
@@ -107,8 +107,9 @@ body::after {
     height: 0;
     margin-right: .5em;
     padding: 20px;
+    border-bottom: 4px solid;
     font-size: 170%;
-    color: var(--black);
+    color: var(--grey);
 }
 
 a {
