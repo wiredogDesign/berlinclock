@@ -110,8 +110,9 @@ body::after {
     position: absolute;
     top: -1px;
     content: '';
-    width: 4px;
-    height: 25px;
+    width: 8px;
+    height: 28px;
+    border-radius: 0 0 15px 15px;
     background: var(--black);
 }
 
