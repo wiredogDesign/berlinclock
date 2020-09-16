@@ -1,7 +1,7 @@
 :root {
     --red:      hsla(0, 100%, 48%, 0.7);
     --orange:   hsla(30, 100%, 48%, 0.7);
-    --yellow:   hsl(53, 100%, 50%);
+    --yellow:   hsl(53, 61%, 50%);
     --unitbg:   hsla(0, 0%, 100%, 0.45);
     --white:    hsl(0, 0%, 90%);
     --grey:    hsl(0, 0%, 40%);
@@ -62,9 +62,9 @@ body::after {
 
 
 /* the <on> colours */
-.sec.unit.on {
+/* .sec.unit.on {
     border-bottom-color: var(--yellow);
-}
+} */
 
 .hour-top .unit.on,
 .hour-bottom .unit.on {
@@ -91,11 +91,6 @@ body::after {
     gap: 10px;
     margin-top: -2px;
     padding: 1em;
-    background-color: var(--grey);
-    transition: background-color .4s ease;
-}
-
-.footer:hover {
     background-color: var(--black);
 }
 
@@ -106,10 +101,18 @@ body::after {
     width: 0;
     height: 0;
     margin-right: .5em;
-    padding: 20px;
-    border-bottom: 7px solid white;
-    font-size: 170%;
-    color: var(--grey);
+    padding: 24px;
+    border-radius: 50%;
+    background: var(--yellow);
+}
+
+.sec.unit:after {
+    position: absolute;
+    top: -1px;
+    content: '';
+    width: 4px;
+    height: 25px;
+    background: var(--black);
 }
 
 a {

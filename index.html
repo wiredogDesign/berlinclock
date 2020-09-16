@@ -44,7 +44,7 @@
                 <div class="min unit"></div>
             </div>
             <div class="footer row">
-                <div class="sec unit">0</div>
+                <div class="sec unit"></div>
                 <a title="Get this location in Google Maps" href="https://goo.gl/maps/Zr7xA2ibw9T6PEBo8">Es ist immer Mengenlehreuhr in Berlin</a>
             </div>
         </div>
@@ -52,9 +52,9 @@
         <script src="js/custom-min.js"></script>
         <script>
             setInterval(function () {
-                var counter = new Date().getSeconds();
+                var counter = new Date().getSeconds() -1;
                 ++counter;
-                document.querySelector(".sec").textContent = counter -1;
+                document.querySelector(".sec").style.transform = "rotate(" + counter * 6 + "deg)";
             }, 
             1000)
         </script>

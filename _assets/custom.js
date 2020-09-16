@@ -5,14 +5,14 @@ var berlinClock = function (dom) {
 
 berlinClock.prototype.update = function (d) {
     var d = d || new Date();
-    this.current_seconds(d.getSeconds());
+    // this.current_seconds(d.getSeconds());
     this.current_minutes(d.getMinutes());
     this.current_hours(d.getHours());
 };
 
-berlinClock.prototype.current_seconds = function (seconds) {
-    this.dom.find(".sec").toggleClass("on", seconds % 2 === 1);
-};
+// berlinClock.prototype.current_seconds = function (seconds) {
+//     this.dom.find(".sec").toggleClass("on", seconds % 2 === 1);
+// };
 
 berlinClock.prototype.current_minutes = function (minutes) {
     var minutes2 = minutes % 5;
