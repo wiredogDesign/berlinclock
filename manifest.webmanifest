@@ -17,6 +17,6 @@
     "start_url": "https://wiredogdesign.github.io/berlinclock/",
     "background_color": "#CDBB32",
     "display": "standalone",
-    "scope": "/",
+    "scope": "/berlinclock",
     "theme_color": "#CDBB32"
   }
