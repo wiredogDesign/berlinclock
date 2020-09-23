@@ -4,8 +4,9 @@
     --yellow:   hsl(53, 61%, 50%);
     --unitbg:   hsla(0, 0%, 100%, 0.45);
     --white:    hsl(0, 0%, 90%);
-    --grey:    hsl(0, 0%, 40%);
-    --black: hsl(0, 0%, 25%);
+    --grey:     hsl(0, 0%, 40%);
+    --black:    hsl(0, 0%, 25%);
+    --gap:        4px;
 }
 
 * {
@@ -22,7 +23,7 @@ body {
 body::after {
     content: '';
     position: absolute;
-    top: -18vh;
+    top: -16vh;
     z-index: -1;
     width: 100vw; height: 100vh;
     background: 0 0 / cover url('../img/kudamm.jpg') no-repeat;
@@ -31,9 +32,9 @@ body::after {
 .clock {
     display: grid;
     grid-template-rows: repeat(5, 20vh);
-    gap: 2px;
+    gap: var(--gap);
     height: 100vh;
-    padding: 4px;
+    padding: var(--gap);
     overflow: hidden;
 }
 
@@ -50,11 +51,11 @@ body::after {
 }
 
 .row {
-    gap: 2px;
+    gap: var(--gap);
 }
 
 .unit {
-    border-radius: 4px;
+    border-radius: 10px;
     background: var(--unitbg);
 }
 
