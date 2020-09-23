@@ -1,0 +1,22 @@
+{
+    "short_name": "mengenlehreuhr",
+    "name": "mengenlehreuhr",
+    "description": "Berlin's favourite set theory clock ",
+    "icons": [
+      {
+        "src": "/img/icon-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/img/icon-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#CDBB32",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#CDBB32"
+  }
