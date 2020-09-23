@@ -33,6 +33,7 @@ body::after {
     grid-template-rows: repeat(5, 20vh);
     gap: 2px;
     height: 100vh;
+    padding: 4px;
     overflow: hidden;
 }
 
@@ -53,6 +54,7 @@ body::after {
 }
 
 .unit {
+    border-radius: 4px;
     background: var(--unitbg);
 }
 
@@ -87,9 +89,8 @@ body::after {
     display: grid;
     grid-template-columns: 10% 88%;
     align-items: center;
-    /* justify-items: end; */
     gap: 10px;
-    margin-top: -2px;
+    margin: 0 -4px;
     padding: 1em;
     background-color: var(--black);
 }
