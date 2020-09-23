@@ -14,7 +14,7 @@
         "sizes": "512x512"
       }
     ],
-    "start_url": "/",
+    "start_url": "https://wiredogdesign.github.io/berlinclock/",
     "background_color": "#CDBB32",
     "display": "standalone",
     "scope": "/",
