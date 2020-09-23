@@ -4,12 +4,7 @@
     "description": "Berlin's favourite set theory clock ",
     "icons": [
       {
-        "src": "img/apple-touch-icon-192.png",
-        "type": "image/png",
-        "sizes": "192x192"
-      },
-      {
-        "src": "img/apple-touch-icon-512.png",
+        "src": "img/apple-touch-icon.png",
         "type": "image/png",
         "sizes": "512x512"
       }
