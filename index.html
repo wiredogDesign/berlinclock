@@ -56,8 +56,13 @@
         <script>
             setInterval(function () {
                 var counter = new Date().getSeconds() -1;
+                var nighttime = new Date().getHours()
                 ++counter;
                 document.querySelector(".sec").style.transform = "rotate(" + counter * 6 + "deg)";
+                
+                if(nighttime <= 8 || nighttime >= 20) {
+                    document.querySelector("body").style.backgroundBlendMode = "hard-light";
+                } 
             }, 
             1000)
         </script>
