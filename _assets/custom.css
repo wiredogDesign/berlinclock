@@ -18,16 +18,18 @@
 body {
     font-family: "Exo", 'Courier New', Courier;
     color: var(--white);
+    background: 0 -17vh / cover url('../img/kudamm.jpg') no-repeat, black;
+    /* background-blend-mode: hard-light; */
 }
 
-body::after {
+/* body::after {
     content: '';
     position: absolute;
     top: -16vh;
     z-index: -1;
     width: 100vw; height: 100vh;
     background: 0 0 / cover url('../img/kudamm.jpg') no-repeat;
-}
+} */
 
 .clock {
     display: grid;
