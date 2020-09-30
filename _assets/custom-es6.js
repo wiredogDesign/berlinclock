@@ -2,7 +2,7 @@ setInterval(function () {
     var counter = seconds -1;
     ++counter;
     document.querySelector(".sec").style.transform = "rotate(" + counter * 6 + "deg)";   
-}, 1000);
+
 
     var time = new Date();
     var hours = time.getHours();
@@ -19,11 +19,14 @@ setInterval(function () {
     var minsTop = document.querySelectorAll('.minute-top > div');
     var minsBottom = document.querySelectorAll('.minute-bottom > div');
 
-    for( i = 0; i < fiveHours; i++ ) hoursTop[i].classList.add('on')
-    for( i = 0; i < oneHour; i++ ) hoursBottom[i].classList.add('on')
-    for( i = 0; i < fiveMins; i++ ) minsTop[i].classList.add('on')
-    for( i = 0; i < oneMin; i++ ) minsBottom[i].classList.add('on')
+    var i = 0;
+
+    for( i = 0; i < fiveHours; i++ ) hoursTop[i].classList.add('on');
+    for( i = 0; i < oneHour; i++ ) hoursBottom[i].classList.add('on');
+    for( i = 0; i < fiveMins; i++ ) minsTop[i].classList.add('on');
+    for( i = 0; i < oneMin; i++ ) minsBottom[i].classList.add('on');
 
     if(hours <= 8 || hours >= 20) {
         document.querySelector("body").style.backgroundBlendMode = "hard-light";
     } 
+}, 1000);
