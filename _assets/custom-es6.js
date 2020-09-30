@@ -1,8 +1,4 @@
-setInterval(function () {
-    var counter = seconds -1;
-    ++counter;
-    document.querySelector(".sec").style.transform = "rotate(" + counter * 6 + "deg)";   
-
+setInterval(function () {  
 
     var time = new Date();
     var hours = time.getHours();
@@ -18,6 +14,10 @@ setInterval(function () {
     var hoursBottom = document.querySelectorAll('.hour-bottom > div');
     var minsTop = document.querySelectorAll('.minute-top > div');
     var minsBottom = document.querySelectorAll('.minute-bottom > div');
+
+    var counter = seconds -1;
+    ++counter;
+    document.querySelector(".sec").style.transform = "rotate(" + counter * 6 + "deg)"; 
 
     var i = 0;
 
