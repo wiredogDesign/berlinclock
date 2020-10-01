@@ -21,10 +21,10 @@ setInterval(function () {
 
     var i = 0;
 
-    for( i = 0; i < fiveHours; i++ ) hoursTop[i].classList.add('on');
-    for( i = 0; i < oneHour; i++ ) hoursBottom[i].classList.add('on');
-    for( i = 0; i < fiveMins; i++ ) minsTop[i].classList.add('on');
-    for( i = 0; i < oneMin; i++ ) minsBottom[i].classList.add('on');
+    for( i = 0; i < fiveHours; i++ ) { hoursTop[i].classList.add('on'); }
+    for( i = 0; i < oneHour; i++ ) { hoursBottom[i].classList.add('on'); }
+    for( i = 0; i < fiveMins; i++ ) { minsTop[i].classList.add('on'); }
+    for( i = 0; i < oneMin; i++ ) { minsBottom[i].classList.add('on'); }
 
     if(hours <= 8 || hours >= 20) {
         document.querySelector("body").style.backgroundBlendMode = "hard-light";
