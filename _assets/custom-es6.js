@@ -28,16 +28,26 @@ setInterval(() => {
     // so only first two blocks would be on
     for(i = 0; i < hoursX5; i++) {hx5[i].classList.add('on')}
     // remove the <on> class when the count reaches 0
-    if(hoursX5 == 0) {forEach(hx5 => hx5.classList.remove('on'))}
+    if(hoursX5 == 0) {
+        Array.from(hx5).forEach(hx5 => hx5.classList.remove('on'))
+    }
 
     for(i = 0; i < hoursX1; i++ ) {hx1[i].classList.add('on')}
-    if( hoursX1 == 0) {forEach(hx1 => hx1.classList.remove('on'))}
+    if( hoursX1 == 0) {
+        Array.from(hx1).forEach(hx1 => hx1.classList.remove('on'))
+    }
 
     for(i = 0; i < minsX5; i++ ) {mx5[i].classList.add('on')}
-    if( minsX5 == 0) {forEach(mx5 => mx5.classList.remove('on'))}
+    if( minsX5 == 0) {
+        Array.from(mx5).forEach(mx5 => mx5.classList.remove('on'))
+    }
 
     for(i = 0; i < minsX1; i++ ) {mx1[i].classList.add('on')}
-    if(minsX1 == 0) {forEach(mx1 => mx1.classList.remove('on'))}
+    if(minsX1 == 0) {
+        Array.from(mx1).forEach(mx1 => mx1.classList.remove('on'))
+    }
+
+    console.log(minsX1)
 
     // darkens the background image from 20:00 to 08:00
     if(hours <= 7 || hours >= 20) {
