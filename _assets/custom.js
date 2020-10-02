@@ -1,48 +1,54 @@
-var berlinClock = function (dom) {
-    this.dom = $(dom);
-    this.update();
-};
+setInterval(() => {  
 
-berlinClock.prototype.update = function (d) {
-    var d = d || new Date();
-    // this.current_seconds(d.getSeconds());
-    this.current_minutes(d.getMinutes());
-    this.current_hours(d.getHours());
-};
+    var time = new Date();
+    var hours = time.getHours();
+    var minutes = time.getMinutes();
+    var seconds = time.getSeconds();
+    
+    var hoursX5 = Math.floor(hours / 5); // gives quotient & discards remainder
+    var hoursX1 = Math.floor(hours % 5); // gives remainder & discards quotient
+    var minsX5 = Math.floor(minutes / 5);
+    var minsX1 = Math.floor(minutes % 5);
 
-// berlinClock.prototype.current_seconds = function (seconds) {
-//     this.dom.find(".sec").toggleClass("on", seconds % 2 === 1);
-// };
+    // get a node list for each group
+    var hx5 = document.querySelectorAll('.hx5 > div');
+    var hx1 = document.querySelectorAll('.hx1 > div');
+    var mx5 = document.querySelectorAll('.mx5 > div');
+    var mx1 = document.querySelectorAll('.mx1 > div');
 
-berlinClock.prototype.current_minutes = function (minutes) {
-    var minutes2 = minutes % 5;
-    var minutes1 = (minutes - minutes2) / 5;
-    this.dom.find(".minute-top.row > div").each(function (i) {
-        $(this).toggleClass("on", --minutes1 >= 0);
-    });
-    this.dom.find(".minute-bottom.row > div").each(function (i) {
-        $(this).toggleClass("on", --minutes2 >= 0);
-    });
-};
+    // rotate the seconds indicator
+    var counter = seconds;
+    ++counter;
+    document.querySelector('.sec').style.transform = 'rotate(' + counter * 6 + 'deg)'; 
 
-berlinClock.prototype.current_hours = function (hours) {
-    var hours2 = hours % 5;
-    var hours1 = (hours - hours2) / 5;
-    this.dom.find(".hour-top.row > div").each(function (i) {
-        $(this).toggleClass("on", --hours1 >= 0);
-    });
-    this.dom.find(".hour-bottom.row > div").each(function (i) {
-        $(this).toggleClass("on", --hours2 >= 0);
-    });
-};
+    // now the working bits
+    var i = 0;
 
-$(document).ready(function () {
-    var berlin_clock = new berlinClock('#berlinClock');
-    function tick() {
-        berlin_clock.update();
-        setInterval(function () {
-            berlin_clock.update();
-        }, 1000);
+    // loop through the nodes and apply <on> class, eg quotient at 10:00 is 2
+    // so only first two blocks would be on
+    for(i = 0; i < hoursX5; i++) {hx5[i].classList.add('on')}
+    // remove the <on> class when the count reaches 0
+    if(hoursX5 == 0) {
+        Array.from(hx5).forEach(hx5 => hx5.classList.remove('on'))
     }
-    tick();
-});
+
+    for(i = 0; i < hoursX1; i++ ) {hx1[i].classList.add('on')}
+    if( hoursX1 == 0) {
+        Array.from(hx1).forEach(hx1 => hx1.classList.remove('on'))
+    }
+
+    for(i = 0; i < minsX5; i++ ) {mx5[i].classList.add('on')}
+    if( minsX5 == 0) {
+        Array.from(mx5).forEach(mx5 => mx5.classList.remove('on'))
+    }
+
+    for(i = 0; i < minsX1; i++ ) {mx1[i].classList.add('on')}
+    if(minsX1 == 0) {
+        Array.from(mx1).forEach(mx1 => mx1.classList.remove('on'))
+    }
+
+    // darkens the background image from 20:00 to 08:00
+    if(hours <= 7 || hours >= 20) {
+        document.querySelector('body').style.backgroundBlendMode = 'hard-light';
+    } 
+}, 1000);
