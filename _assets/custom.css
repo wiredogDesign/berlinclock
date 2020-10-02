@@ -40,14 +40,14 @@ body {
     overflow: hidden;
 }
 
-.hour-top,
-.hour-bottom,
-.minute-bottom {
+.hx5,
+.hx1,
+.mx1 {
     display: grid;
     grid-template-columns: repeat(4, auto);
 }
 
-.minute-top {
+.mx5 {
     display: grid;
     grid-template-columns: repeat(11, auto);
 }
@@ -71,19 +71,19 @@ body {
     border-bottom-color: var(--yellow);
 } */
 
-.hour-top .unit.on,
-.hour-bottom .unit.on {
+.hx5 .unit.on,
+.hx1 .unit.on {
     background-color: var(--red); 
 }
 
-.minute-top .unit.on,
-.minute-bottom .unit.on {
+.mx5 .unit.on,
+.mx1 .unit.on {
     background-color: var(--orange);
 }
 
-.minute-top .unit:nth-child(3).on,
-.minute-top .unit:nth-child(6).on,
-.minute-top .unit:nth-child(9).on {
+.mx5 .unit:nth-child(3).on,
+.mx5 .unit:nth-child(6).on,
+.mx5 .unit:nth-child(9).on {
     background-color: var(--red);
 }
 

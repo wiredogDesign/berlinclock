@@ -1,19 +1,19 @@
-setInterval(function () {  
+setInterval(() => {  
 
     var time = new Date();
     var hours = time.getHours();
     var minutes = time.getMinutes();
     var seconds = time.getSeconds();
     
-    var fiveHours = Math.floor(hours / 5); // 
-    var oneHour = Math.floor(hours % 5); // 
-    var fiveMins = Math.floor(minutes / 5); // 
-    var oneMin = Math.floor(minutes % 5); // 
+    var hoursX5 = Math.floor(hours / 5); // 
+    var hoursX1 = Math.floor(hours % 5); // 
+    var minsX5 = Math.floor(minutes / 5); // 
+    var minsX1 = Math.floor(minutes % 5); // 
 
-    var hoursTop = document.querySelectorAll('.hour-top > div');
-    var hoursBottom = document.querySelectorAll('.hour-bottom > div');
-    var minsTop = document.querySelectorAll('.minute-top > div');
-    var minsBottom = document.querySelectorAll('.minute-bottom > div');
+    var hx5 = document.querySelectorAll('.hx5 > div');
+    var hx1 = document.querySelectorAll('.hx1 > div');
+    var mx5 = document.querySelectorAll('.mx5 > div');
+    var mx1 = document.querySelectorAll('.mx1 > div');
 
     var counter = seconds -1;
     ++counter;
@@ -21,24 +21,24 @@ setInterval(function () {
 
     var i = 0;
 
-    for( i = 0; i < fiveHours; i++ ) { hoursTop[i].classList.add('on'); }
-        if( fiveHours == 0 ) {
-            Array.from(hoursTop).forEach(hoursTop => hoursTop.classList.remove('on'))
+    for( i = 0; i < hoursX5; i++ ) { hx5[i].classList.add('on'); }
+        if( hoursX5 == 0 ) {
+            Array.from(hx5).forEach(hx5 => hx5.classList.remove('on'))
         }
 
-    for( i = 0; i < oneHour; i++ ) { hoursBottom[i].classList.add('on'); }
-        if( oneHour == 0 ) {
-            Array.from(hoursBottom).forEach(hoursBottom => hoursBottom.classList.remove('on'))
+    for( i = 0; i < hoursX1; i++ ) { hx1[i].classList.add('on'); }
+        if( hoursX1 == 0 ) {
+            Array.from(hx1).forEach(hx1 => hx1.classList.remove('on'))
         }
 
-    for( i = 0; i < fiveMins; i++ ) { minsTop[i].classList.add('on'); }
-        if( fiveMins == 0 ) {
-            Array.from(minsTop).forEach(minsTop => minsTop.classList.remove('on'))
+    for( i = 0; i < minsX5; i++ ) { mx5[i].classList.add('on'); }
+        if( minsX5 == 0 ) {
+            Array.from(mx5).forEach(mx5 => mx5.classList.remove('on'))
         }
 
-    for( i = 0; i < oneMin; i++ ) { minsBottom[i].classList.add('on'); }
-        if( oneMin == 0 ) {
-            Array.from(minsBottom).forEach(minsBottom => minsBottom.classList.remove('on'))
+    for( i = 0; i < minsX1; i++ ) { mx1[i].classList.add('on'); }
+        if( minsX1 == 0 ) {
+            Array.from(mx1).forEach(mx1 => mx1.classList.remove('on'))
         }
 
     if(hours <= 8 || hours >= 20) {
