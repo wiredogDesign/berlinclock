@@ -47,8 +47,6 @@ setInterval(() => {
         Array.from(mx1).forEach(mx1 => mx1.classList.remove('on'))
     }
 
-    console.log(minsX1)
-
     // darkens the background image from 20:00 to 08:00
     if(hours <= 7 || hours >= 20) {
         document.querySelector('body').style.backgroundBlendMode = 'hard-light';
