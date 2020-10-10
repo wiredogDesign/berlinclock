@@ -57,12 +57,14 @@ body {
 }
 
 .unit {
-    border-radius: 10px;
+    border-radius: .3vw;
     background: var(--unitbg);
+    transition: all 150ms ease-out;
 }
 
 .on {
     backdrop-filter: blur(4px);
+    transition: all 200ms ease-in;
 }
 
 
@@ -98,7 +100,7 @@ body {
     background-color: var(--black);
 }
 
-.sec.unit {
+.sec {
     position: relative;
     display: flex;
     justify-content: center;
@@ -111,7 +113,7 @@ body {
     background: var(--yellow);
 }
 
-.sec.unit:after {
+.sec:after {
     position: absolute;
     top: -1px;
     content: '';
