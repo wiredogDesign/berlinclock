@@ -18,7 +18,7 @@
 body {
     font-family: "Exo", 'Courier New', Courier;
     color: var(--white);
-    background: 0 -17vh / cover url('../img/kudamm.jpg') no-repeat, black;
+    background: 0 -16vh / cover url('../img/kudamm.jpg') no-repeat, black;
     /* background-blend-mode: hard-light; */
 }
 
