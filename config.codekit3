@@ -49,6 +49,14 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/CNAME": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/CNAME",
+		"oF": 1
+		},
 	"/css/custom-min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -225,7 +233,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 581548269.01525998,
-	"displayValue": "Berlin_Clock",
+	"displayValue": "Berlin Clock",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "/apple-touch-icon.png",
 	"iconImageWasSetByUser": 1,
@@ -2431,7 +2439,7 @@
 			"flagValue": -1
 			},
 		"drop_console": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"drop_debugger": {
@@ -2440,7 +2448,7 @@
 			},
 		"ecma": {
 			"active": 1,
-			"flagValue": 5
+			"flagValue": 6
 			},
 		"eval": {
 			"active": 0,
@@ -2643,7 +2651,7 @@
 			"flagValue": -1
 			}
 		},
-	"uglifyMangleNames": 0,
+	"uglifyMangleNames": 1,
 	"uglifyReservedNamesString": "$,exports,require",
 	"websiteRelativeRoot": ""
 	},
