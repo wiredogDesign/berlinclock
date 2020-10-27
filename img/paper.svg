@@ -1,1 +1,10 @@
-<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><defs><filter id="a" primitiveUnits="objectBoundingBox"><feTurbulence result="noise" baseFrequency=".04" numOctaves="5" type="fractalNoise"/><feDiffuseLighting lighting-color="#fff" in="noise" surfaceScale="2"><feDistantLight azimuth="45" elevation="60"/></feDiffuseLighting></filter></defs><path fill="#fff" filter="url(#a)" d="M0 0h400v400H0z"/></svg>
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+<defs>
+    <filter id="a" primitiveUnits="objectBoundingBox">
+        <feTurbulence result="noise" baseFrequency=".04" numOctaves="5" type="fractalNoise"/>
+            <feDiffuseLighting lighting-color="#fff" in="noise" surfaceScale="2">
+                <feDistantLight azimuth="45" elevation="60"/>
+            </feDiffuseLighting>
+    </filter>
+</defs>
+<path fill="#fff" filter="url(#a)" d="M0 0h400v400H0z"/></svg>
