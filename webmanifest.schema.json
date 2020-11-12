@@ -2,6 +2,7 @@
     "$schema": "https://json.schemastore.org/web-manifest",
     "$id": "https://github.com/wiredogDesign/berlinclock/blob/master/webmanifest.schema.json",
     "type": "object",
+    "fileMatch": ["*.webmanifest"],
     "properties": {
         "theme_color": {
             "type": "string",
