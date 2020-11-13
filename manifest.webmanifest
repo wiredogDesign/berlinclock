@@ -1,4 +1,4 @@
-{
+{   "$schema": "./webmanifest.schema.json",
     "short_name": "Mengenlehreuhr",
     "name": "Mengenlehreuhr",
     "description": "Berlin's favourite set theory clock ",
