@@ -1,4 +1,4 @@
-{   "$schema": "./webmanifest.schema.json",
+// {   "$schema": "./webmanifest.schema.json",
     "short_name": "Mengenlehreuhr",
     "name": "Mengenlehreuhr",
     "description": "Berlin's favourite set theory clock ",
@@ -10,7 +10,7 @@
       }
     ],
     "start_url": "https://wiredogdesign.github.io/berlinclock/",
-    "background_color": "#CDBB32",
+    "background_color": "#404040",
     "display": "standalone",
     "scope": "/berlinclock",
     "theme_color": "#CDBB32"
