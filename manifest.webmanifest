@@ -1,17 +1,17 @@
-{   
+{
     "short_name": "Mengenlehreuhr",
     "name": "Mengenlehreuhr",
-    "description": "Berlin's favourite set theory clock ",
-    "icons": [
-      {
-        "src": "https://wiredogdesign.github.io/berlinclock/apple-touch-icon.png",
-        "type": "image/png",
-        "sizes": "512x512"
-      }
-    ],
+    "description": "Berlin's favourite set theory clock",
     "start_url": "https://wiredogdesign.github.io/berlinclock/",
-    "background_color": "#404040",
-    "display": "standalone",
     "scope": "/berlinclock",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "https://wiredogdesign.github.io/berlinclock/apple-touch-icon.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "background_color": "#404040",
     "theme_color": "#CDBB32"
 }
