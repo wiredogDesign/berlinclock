@@ -123,10 +123,10 @@
 		"oA": 0,
 		"oAP": "/img/kudamm.jpg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"ou": "lpckwebp-none",
-		"q": 43,
+		"q": 25,
 		"rq": 75
 		},
 	"/img/wiredog_animated.svg": {
