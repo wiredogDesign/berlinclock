@@ -129,6 +129,19 @@
 		"q": 25,
 		"rq": 75
 		},
+	"/img/kudamm_new.jpg": {
+		"ft": 16384,
+		"iS": 75002,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/kudamm_new.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
 	"/img/wiredog_animated.svg": {
 		"ft": 2097152,
 		"miP": 0,

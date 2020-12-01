@@ -16,11 +16,6 @@ setInterval(() => {
     var mx5 = document.querySelectorAll('.mx5 > div');
     var mx1 = document.querySelectorAll('.mx1 > div');
 
-    // rotate the seconds indicator
-    var counter = seconds;
-    ++counter;
-    document.querySelector('.sec').style.transform = 'rotate(' + counter * 6 + 'deg)'; 
-
     // now the working bits
     var i = 0;
 
