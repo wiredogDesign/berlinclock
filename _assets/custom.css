@@ -47,8 +47,8 @@ body {
 
 .unit {
     border-radius: .3vw;
-    /* background: var(--unitbg); */
     transition: all 150ms ease-out;
+    filter: drop-shadow(0vw 0.3vw 0.6vw var(--black));
 }
 
 .on {

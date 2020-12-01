@@ -55,9 +55,9 @@
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/CNAME",
-		"oF": 1
+		"oF": 0
 		},
 	"/css/custom-min.css": {
 		"aP": 1,
@@ -123,10 +123,10 @@
 		"oA": 0,
 		"oAP": "/img/kudamm.jpg",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"ou": "lpckwebp-none",
-		"q": 25,
+		"q": 43,
 		"rq": 75
 		},
 	"/img/kudamm_new.jpg": {
@@ -141,6 +141,16 @@
 		"ou": "lpckwebp-none",
 		"q": 100,
 		"rq": 75
+		},
+	"/img/paper.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/paper.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52797496090591,
+		"prP": 1
 		},
 	"/img/wiredog_animated.svg": {
 		"ft": 2097152,
@@ -204,7 +214,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 581548269.01525998,
-	"displayValue": "Berlin Clock",
+	"displayValue": "Berlin_Clock",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "/apple-touch-icon.png",
 	"iconImageWasSetByUser": 1,
@@ -643,14 +653,14 @@
 			"flagValue": -1
 			}
 		},
-	"environmentVariablesString": "",
+	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
 	"esLintEnvironmentsMask": 1,
 	"esLintRules": {
 		"accessor-pairs": {
 			"active": 0,
-			"optionString": "{'setWithoutGet': true, 'getWithoutSet': false}"
+			"optionString": "{'setWithoutGet': true, 'getWithoutSet': false, 'enforceForClassMembers': true}"
 			},
 		"array-bracket-newline": {
 			"active": 0,
@@ -697,7 +707,7 @@
 			},
 		"camelcase": {
 			"active": 0,
-			"optionString": "{'properties': 'always', 'ignoreDestructuring': false}"
+			"optionString": "{'properties': 'always', 'ignoreDestructuring': false, 'ignoreImports': false}"
 			},
 		"capitalized-comments": {
 			"active": 0,
@@ -725,7 +735,7 @@
 			},
 		"computed-property-spacing": {
 			"active": 0,
-			"optionString": "'never'"
+			"optionString": "'never', {'enforceForClassMembers': true}"
 			},
 		"consistent-return": {
 			"active": 0,
@@ -1046,7 +1056,7 @@
 			},
 		"no-extra-parens": {
 			"active": 0,
-			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none', 'enforceForArrowConditionals': false}"
+			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none', 'enforceForArrowConditionals': false, 'enforceForSequenceExpressions': false, 'enforceForNewInMemberExpressions': false}"
 			},
 		"no-extra-semi": {
 			"active": 1
@@ -1090,7 +1100,7 @@
 			},
 		"no-invalid-this": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "{'capIsConstructor': true}"
 			},
 		"no-irregular-whitespace": {
 			"active": 1,
@@ -1309,7 +1319,7 @@
 			},
 		"no-underscore-dangle": {
 			"active": 0,
-			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'enforceInMethodNames': false}"
+			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'allowAfterThisConstructor': false, 'enforceInMethodNames': false}"
 			},
 		"no-unexpected-multiline": {
 			"active": 1
@@ -1333,7 +1343,7 @@
 			},
 		"no-unsafe-negation": {
 			"active": 1,
-			"optionString": ""
+			"optionString": "{'enforceForOrderingRelations': false}"
 			},
 		"no-unused-expressions": {
 			"active": 0,
@@ -1361,7 +1371,7 @@
 			},
 		"no-useless-computed-key": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "{'enforceForClassMembers': false}"
 			},
 		"no-useless-concat": {
 			"active": 0
@@ -1384,7 +1394,7 @@
 			},
 		"no-void": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "{'allowAsStatement': false}"
 			},
 		"no-warning-comments": {
 			"active": 0,
@@ -1584,7 +1594,7 @@
 			},
 		"use-isnan": {
 			"active": 1,
-			"optionString": ""
+			"optionString": "{'enforceForSwitchCase': true, 'enforceForIndexOf': false}"
 			},
 		"valid-jsdoc": {
 			"active": 0,
@@ -1616,7 +1626,7 @@
 	"esLintSourceType": 0,
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
-	"hideConfigFile": 1,
+	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
 		"asi": {
@@ -2142,7 +2152,7 @@
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 0,
-		"compilerType": 1,
+		"compilerType": 0,
 		"createSourceMap": 0,
 		"decimalPrecision": 10,
 		"emitCharset": 1,
@@ -2187,7 +2197,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"pluginMask": 52797496090591
+		"pluginMask": 52780316221407
 		},
 	"languageDefaultsTS": {
 		"autoOutputAction": 0,
@@ -2214,7 +2224,7 @@
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"rollupExternals": "",
-	"rollupReplacements": "",
+	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
 	"rollupTreeshakingEnabled": 1,
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
 	"sourceFolderName": "source",
@@ -2256,11 +2266,11 @@
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
 		"arguments": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"arrows": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"ascii_only": {
@@ -2268,7 +2278,7 @@
 			"flagValue": -1
 			},
 		"booleans": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"booleans_as_integers": {
@@ -2280,7 +2290,7 @@
 			"flagValue": -1
 			},
 		"collapse_vars": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"comments": {
@@ -2288,27 +2298,27 @@
 			"flagValue": -1
 			},
 		"comparisons": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"computed_props": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"conditionals": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"dead_code": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"directives": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"drop_console": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"drop_debugger": {
@@ -2317,14 +2327,14 @@
 			},
 		"ecma": {
 			"active": 1,
-			"flagValue": 6
+			"flagValue": 5
 			},
 		"eval": {
 			"active": 0,
 			"flagValue": -1
 			},
 		"evaluate": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"expression": {
@@ -2336,7 +2346,7 @@
 			"flagValue": -1
 			},
 		"hoist_props": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"hoist_vars": {
@@ -2348,7 +2358,7 @@
 			"flagValue": -1
 			},
 		"if_return": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"indent_level": {
@@ -2360,7 +2370,7 @@
 			"flagValue": 0
 			},
 		"inline": {
-			"active": 0,
+			"active": 1,
 			"flagValue": 3
 			},
 		"inline_script": {
@@ -2368,19 +2378,19 @@
 			"flagValue": -1
 			},
 		"join_vars": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"keep_classnames": {
-			"active": 1,
-			"flagValue": -1
-			},
-		"keep_fargs": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"keep_fnames": {
+		"keep_fargs": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"keep_fnames": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"keep_infinity": {
@@ -2392,11 +2402,11 @@
 			"flagValue": -1
 			},
 		"loops": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"max_line_len": {
-			"active": 0,
+			"active": 1,
 			"flagValue": 32000
 			},
 		"module": {
@@ -2404,7 +2414,7 @@
 			"flagValue": -1
 			},
 		"negate_iife": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"passes": {
@@ -2412,7 +2422,7 @@
 			"flagValue": 1
 			},
 		"properties": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"pure_getters": {
@@ -2428,11 +2438,11 @@
 			"flagValue": 0
 			},
 		"reduce_funcs": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"reduce_vars": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"safari10": {
@@ -2444,7 +2454,7 @@
 			"flagValue": -1
 			},
 		"sequences": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"shebang": {
@@ -2452,11 +2462,11 @@
 			"flagValue": -1
 			},
 		"side_effects": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"switches": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"toplevel": {
@@ -2464,7 +2474,7 @@
 			"flagValue": -1
 			},
 		"typeofs": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"unsafe": {
@@ -2504,7 +2514,7 @@
 			"flagValue": -1
 			},
 		"unused": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"warnings": {
