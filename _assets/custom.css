@@ -1,10 +1,6 @@
 :root {
-    --red:      hsla(0, 100%, 48%, 0.7);
-    --orange:   hsla(30, 100%, 48%, 0.7);
-    --yellow:   hsl(53, 61%, 50%);
-    --unitbg:   hsla(0, 0%, 100%, 0.45);
-    --white:    hsl(0, 0%, 90%);
-    --grey:     hsl(0, 0%, 40%);
+    --red:      hsla(0, 100%, 48%, 0.5);
+    --orange:   hsla(30, 100%, 48%, 0.6);
     --black:    hsl(0, 0%, 25%);
     --gap:        4px;
 }
@@ -17,7 +13,6 @@
 
 body {
     font-family: "Exo", 'Courier New', Courier;
-    color: var(--white);
     background: center bottom / cover url('../img/kudamm_new.jpg') no-repeat, black;
 }
 
@@ -52,15 +47,9 @@ body {
 }
 
 .on {
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(4px);
     transition: all 200ms ease-in;
 }
-
-
-/* the <on> colours */
-/* .sec.unit.on {
-    border-bottom-color: var(--yellow);
-} */
 
 .hx5 .unit.on,
 .hx1 .unit.on {
