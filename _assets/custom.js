@@ -43,7 +43,7 @@ setInterval(() => {
     }
 
     // darkens the background image from 20:00 to 08:00
-    if(hours <= 7 || hours >= 20) {
-        document.querySelector('body').style.backgroundBlendMode = 'hard-light';
-    } 
+    // if(hours <= 7 || hours >= 20) {
+    //     document.querySelector('body').style.backgroundBlendMode = 'hard-light';
+    // } 
 }, 1000);
