@@ -13,7 +13,7 @@
 
 body {
     font-family: "Exo", 'Courier New', Courier;
-    background: center bottom / cover url('../img/kudamm_new.jpg') no-repeat, black;
+    background: left top / cover url('../img/reunification.jpg') no-repeat, black;
 }
 
 .clock {
