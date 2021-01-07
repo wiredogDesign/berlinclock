@@ -3,6 +3,7 @@
     --orange:   hsla(30, 100%, 48%, 0.6);
     --black:    hsl(0, 0%, 25%);
     --gap:        4px;
+    --bounce:   all 400ms cubic-bezier(1, -0.51, 0, 3.36);
 }
 
 * {
@@ -41,13 +42,13 @@ body {
 
 .unit {
     border-radius: .3vw;
-    transition: all 150ms ease-out;
+    transition: var(--bounce);
     filter: drop-shadow(0vw 0.3vw 0.6vw var(--black));
 }
 
 .on {
     backdrop-filter: blur(4px);
-    transition: all 200ms ease-in;
+    transition: var(--bounce);
 }
 
 .hx5 .unit.on,
