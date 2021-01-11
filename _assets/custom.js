@@ -3,7 +3,6 @@ setInterval(() => {
     var time = new Date();
     var hours = time.getHours();
     var minutes = time.getMinutes();
-    var seconds = time.getSeconds();
     
     var hoursX5 = Math.floor(hours / 5); // gives quotient & discards remainder
     var hoursX1 = Math.floor(hours % 5); // gives remainder & discards quotient
@@ -27,23 +26,22 @@ setInterval(() => {
         Array.from(hx5).forEach(hx5 => hx5.classList.remove('on'))
     }
 
+
     for(i = 0; i < hoursX1; i++ ) {hx1[i].classList.add('on')}
     if( hoursX1 == 0) {
         Array.from(hx1).forEach(hx1 => hx1.classList.remove('on'))
     }
+
 
     for(i = 0; i < minsX5; i++ ) {mx5[i].classList.add('on')}
     if( minsX5 == 0) {
         Array.from(mx5).forEach(mx5 => mx5.classList.remove('on'))
     }
 
+
     for(i = 0; i < minsX1; i++ ) {mx1[i].classList.add('on')}
     if(minsX1 == 0) {
         Array.from(mx1).forEach(mx1 => mx1.classList.remove('on'))
     }
-
-    // darkens the background image from 20:00 to 08:00
-    // if(hours <= 7 || hours >= 20) {
-    //     document.querySelector('body').style.backgroundBlendMode = 'hard-light';
-    // } 
+    
 }, 1000);
