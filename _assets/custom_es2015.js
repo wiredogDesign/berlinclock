@@ -18,42 +18,37 @@ setInterval(function () {
   // now the working bits
   var i = 0; 
   
-  // loop through the nodes and apply <on> class, eg quotient at 10:00 is 2
-  // so only first two blocks would be on
+  // loop through the nodes and apply <on> class, eg quotient at 10:00 is 2 so only first two blocks would be on
+  // next remove the <on> class when the count reaches 0
   for (i = 0; i < hoursX5; i++) {
     hx5[i].classList.add('on');
   } 
-  // remove the <on> class when the count reaches 0
   if (hoursX5 == 0) {
     Array.from(hx5).forEach(function (hx5) {
       return hx5.classList.remove('on');
     });
   }
-
+  /////////////////////////////////////////// 
 
   for (i = 0; i < hoursX1; i++) {
     hx1[i].classList.add('on');
   }
-
   if (hoursX1 == 0) {
     Array.from(hx1).forEach(function (hx1) {
       return hx1.classList.remove('on');
     });
   }
-
-
+  /////////////////////////////////////////// 
 
   for (i = 0; i < minsX5; i++) {
     mx5[i].classList.add('on');
   }
-
   if (minsX5 == 0) {
     Array.from(mx5).forEach(function (mx5) {
       return mx5.classList.remove('on');
     });
   }
-
-
+  /////////////////////////////////////////// 
 
   for (i = 0; i < minsX1; i++) {
     mx1[i].classList.add('on');
