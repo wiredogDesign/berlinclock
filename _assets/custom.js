@@ -18,7 +18,8 @@ setInterval(() => {
     // now the working bits
     var i = 0;
 
-    // loop through the nodes and apply <on> class, eg quotient at 10:00 is 2
+    // loop through the nodes and apply <on> class
+    // eg quotient at 10:00 is 2
     // so only first two blocks would be on
     // then remove the <on> class when the count reaches 0
     for(i = 0; i < hoursX5; i++) {
