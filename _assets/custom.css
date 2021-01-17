@@ -82,7 +82,7 @@ h1 {
 }
 
 h1 > span {
-    padding-top: var(--gap);
-    font-size: 74%;
+    padding-top: 2vw;
+    font-size: 84%;
     color: hsl(0, 0%, 31%);
 }
