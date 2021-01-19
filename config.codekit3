@@ -153,6 +153,16 @@
 		"q": 100,
 		"rq": 75
 		},
+	"/img/paper.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/paper.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52797496090591,
+		"prP": 1
+		},
 	"/img/reunification.jpg": {
 		"ft": 16384,
 		"iS": 93385,
@@ -202,6 +212,33 @@
 		"oA": 0,
 		"oAP": "/manifest.webmanifest",
 		"oF": 0
+		},
+	"/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/test_flex.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/test_flex.html",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -228,7 +265,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 581548269.01525998,
-	"displayValue": "Berlin Clock",
+	"displayValue": "Berlin_Clock",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "/apple-touch-icon.png",
 	"iconImageWasSetByUser": 1,
