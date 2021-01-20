@@ -1,6 +1,7 @@
 setInterval(() => {  
 
     var time = new Date();
+    var year = time.getFullYear();
     var hours = time.getHours();
     var minutes = time.getMinutes();
     
@@ -14,6 +15,8 @@ setInterval(() => {
     var hx1 = document.querySelectorAll('.hx1 > div');
     var mx5 = document.querySelectorAll('.mx5 > div');
     var mx1 = document.querySelectorAll('.mx1 > div');
+    
+    document.querySelector('.year').textContent = year;
 
     // now the working bits
     var i = 0;
