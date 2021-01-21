@@ -6,6 +6,7 @@ setInterval(() => {
     var day = time.getDate();
     var hours = time.getHours();
     var minutes = time.getMinutes();
+    // makes month two digits if less than 10
     var monthCorrected = month < 10 ? '0' + month : '' + month;
     var ymd = year + "*" + monthCorrected + "*" + day;
     
