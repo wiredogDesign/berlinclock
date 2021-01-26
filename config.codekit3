@@ -153,6 +153,16 @@
 		"q": 100,
 		"rq": 75
 		},
+	"/img/paper.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/paper.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52797496090591,
+		"prP": 1
+		},
 	"/img/reunification.jpg": {
 		"ft": 16384,
 		"iS": 93385,
@@ -229,6 +239,14 @@
 		"oA": 0,
 		"oAP": "/sound/timepip.mp3",
 		"oF": 0
+		},
+	"/test_flex.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/test_flex.html",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -255,7 +273,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 581548269.01525998,
-	"displayValue": "Berlin Clock",
+	"displayValue": "Berlin_Clock",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "/apple-touch-icon.png",
 	"iconImageWasSetByUser": 1,

@@ -9,6 +9,8 @@ setInterval(() => {
     // makes month two digits if less than 10
     var monthCorrected = month < 10 ? '0' + month : '' + month;
     var ymd = year + "*" + monthCorrected + "*" + day;
+    // display date in header
+    document.querySelector('h1 > span').textContent = ymd;
     
     var hoursX5 = Math.floor(hours / 5); // gives quotient & discards remainder
     var hoursX1 = Math.floor(hours % 5); // gives remainder & discards quotient
@@ -21,8 +23,6 @@ setInterval(() => {
     var mx5 = document.querySelectorAll('.mx5 > div');
     var mx1 = document.querySelectorAll('.mx1 > div');
     
-    
-    document.querySelector('h1 > span').textContent = ymd;
 
     // now the working bits
     var i = 0;
