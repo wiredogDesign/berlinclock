@@ -1,12 +1,9 @@
 :root {
-    --red:      hsla(0, 100%, 48%, 0.7);
-    --orange:   hsla(30, 100%, 48%, 0.7);
-    --yellow:   hsl(53, 61%, 50%);
-    --unitbg:   hsla(0, 0%, 100%, 0.45);
-    --white:    hsl(0, 0%, 90%);
-    --grey:     hsl(0, 0%, 40%);
+    --red:      hsla(0, 100%, 48%, 0.5);
+    --orange:   hsla(30, 100%, 48%, 0.6);
     --black:    hsl(0, 0%, 25%);
-    --gap:        4px;
+    --gap:      .5vw;
+    --bounce:   all 800ms cubic-bezier(1, -0.51, 0, 3.36);
 }
 
 * {
@@ -16,27 +13,23 @@
 }
 
 body {
-    font-family: "Exo", 'Courier New', Courier;
-    color: var(--white);
-    background: 0 -16vh / cover url('../img/kudamm.jpg') no-repeat, black;
-    /* background-blend-mode: hard-light; */
+    display: grid;
+    grid-template-columns: 93vw 6vw;
+    padding: .5vw;
+    background: left top / cover url('../img/reunification.jpg') no-repeat, black;
+    
 }
 
-/* body::after {
-    content: '';
-    position: absolute;
-    top: -16vh;
-    z-index: -1;
-    width: 100vw; height: 100vh;
-    background: 0 0 / cover url('../img/kudamm.jpg') no-repeat;
-} */
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url('../img/memorial.jpg');
+    }
+}  
 
 .clock {
     display: grid;
-    grid-template-rows: repeat(5, 20vh);
     gap: var(--gap);
-    height: 100vh;
-    padding: var(--gap);
+    padding-right: var(--gap);
     overflow: hidden;
 }
 
@@ -58,20 +51,14 @@ body {
 
 .unit {
     border-radius: .3vw;
-    background: var(--unitbg);
-    transition: all 150ms ease-out;
+    transition: var(--bounce);
+    filter: drop-shadow(0vw 0.3vw 0.6vw var(--black));
 }
 
 .on {
     backdrop-filter: blur(4px);
-    transition: all 200ms ease-in;
+    transition: var(--bounce);
 }
-
-
-/* the <on> colours */
-/* .sec.unit.on {
-    border-bottom-color: var(--yellow);
-} */
 
 .hx5 .unit.on,
 .hx1 .unit.on {
@@ -89,48 +76,29 @@ body {
     background-color: var(--red);
 }
 
-/* footery stuff */
-.footer {
-    display: grid;
-    grid-template-columns: 10% 88%;
-    align-items: center;
-    gap: 10px;
-    margin: 0 -4px;
-    padding: 1em;
-    background-color: var(--black);
-}
-
-.sec {
-    position: relative;
+header {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 0;
-    height: 0;
-    margin-right: .5em;
-    padding: 24px;
-    border-radius: 50%;
-    background: var(--yellow);
+    height: calc(100vh - 1vw);
+    padding: var(--gap);
+    background: hsla(0, 0%, 100%, 0.3);
+    backdrop-filter: blur(2px);
 }
 
-.sec:after {
-    position: absolute;
-    top: -1px;
-    content: '';
-    width: 8px;
-    height: 28px;
-    border-radius: 0 0 15px 15px;
-    background: var(--black);
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: clamp(18px, 3vw, 4vw);
+    writing-mode: vertical-lr;
+    color: var(--black);
 }
 
-a {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    font-size: clamp(16px, 3vw, 40px);
-    text-decoration: none;
-    -webkit-text-stroke: 0.7px var(--white);
-    -webkit-text-fill-color: transparent;
+h1 > span {
+	font-size: 80%;
+	vertical-align: bottom;
+}
+
+@media all and (min-width: 10em) and (max-width: 40em) {
+    h1 {
+        padding-left: 4px;
+    }
 }
