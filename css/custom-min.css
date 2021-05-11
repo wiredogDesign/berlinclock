@@ -1,1 +1,111 @@
-:root{--red:      hsla(0, 100%, 48%, 0.5);--orange:   hsla(30, 100%, 48%, 0.6);--black:    hsl(0, 0%, 25%);--gap:      .5vw;--bounce:   all 800ms cubic-bezier(1, -0.51, 0, 3.36)}@font-face{font-family:'Typed';src:url("../fonts/SpecialElite.woff2")}*{box-sizing:border-box;margin:0;padding:0}body{display:grid;grid-template-columns:93vw 6vw;padding:.5vw;background:left top/cover url("../img/reunification.jpg") no-repeat,black}@media screen and (orientation: landscape){body{background-image:url("../img/memorial.jpg")}}.clock{display:grid;gap:var(--gap);padding-right:var(--gap);overflow:hidden}.hx5,.hx1,.mx1{display:grid;grid-template-columns:repeat(4, auto)}.mx5{display:grid;grid-template-columns:repeat(11, auto)}.row{gap:var(--gap)}.unit{border-radius:.3vw;transition:var(--bounce);filter:drop-shadow(0vw 0.3vw 0.6vw var(--black))}.on{backdrop-filter:blur(4px);transition:var(--bounce)}.hx5 .unit.on,.hx1 .unit.on{background-color:var(--red)}.mx5 .unit.on,.mx1 .unit.on{background-color:var(--orange)}.mx5 .unit.on:nth-child(3),.mx5 .unit.on:nth-child(6),.mx5 .unit.on:nth-child(9){background-color:var(--red)}header{display:flex;justify-content:center;height:calc(100vh - 1vw);padding:var(--gap);background:rgba(255,255,255,0.3);backdrop-filter:blur(2px)}h1{font-family:Typed, Monospace;font-size:clamp(18px, 3vw, 4vw);writing-mode:vertical-lr;color:var(--black)}h1>span{font-size:80%;vertical-align:bottom}@media all and (min-width: 10em) and (max-width: 40em){h1{padding-left:4px}}
+:root {
+    --red:      hsla(0, 100%, 48%, 0.5);
+    --orange:   hsla(30, 100%, 48%, 0.6);
+    --black:    hsl(0, 0%, 25%);
+    --gap:      .5vw;
+    --bounce:   all 800ms cubic-bezier(1, -0.51, 0, 3.36);
+}
+
+@font-face {
+    font-family: 'Typed';
+    src: url('../fonts/SpecialElite.woff2');
+    }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 93vw 6vw;
+    padding: .5vw;
+    background: left top / cover url('../img/reunification.jpg') no-repeat, black;
+    
+}
+
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url('../img/memorial.jpg');
+    }
+}  
+
+.clock {
+    display: grid;
+    gap: var(--gap);
+    padding-right: var(--gap);
+    overflow: hidden;
+}
+
+.hx5,
+.hx1,
+.mx1 {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+.mx5 {
+    display: grid;
+    grid-template-columns: repeat(11, auto);
+}
+
+.row {
+    gap: var(--gap);
+}
+
+.unit {
+    border-radius: .3vw;
+    transition: var(--bounce);
+    filter: drop-shadow(0vw 0.3vw 0.6vw var(--black));
+}
+
+.on {
+    backdrop-filter: blur(4px);
+    transition: var(--bounce);
+}
+
+.hx5 .unit.on,
+.hx1 .unit.on {
+    background-color: var(--red); 
+}
+
+.mx5 .unit.on,
+.mx1 .unit.on {
+    background-color: var(--orange);
+}
+
+.mx5 .unit:nth-child(3).on,
+.mx5 .unit:nth-child(6).on,
+.mx5 .unit:nth-child(9).on {
+    background-color: var(--red);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 1vw);
+    padding: var(--gap);
+    background: hsla(0, 0%, 100%, 0.3);
+    backdrop-filter: blur(2px);
+}
+
+h1 {
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    padding-top: 4px;
+    font-family: Typed, Monospace;
+    font-size: clamp(18px, 3vw, 4vw);
+    writing-mode: vertical-lr;
+    color: var(--black);
+}
+
+h1 > span {
+	font-size: 80%;
+	vertical-align: bottom;
+}
+
+@media all and (min-width: 10em) and (max-width: 40em) {
+    h1 {
+        padding: 2px 2px 0 0;
+    }
+}
