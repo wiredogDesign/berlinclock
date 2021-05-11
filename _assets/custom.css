@@ -20,6 +20,12 @@ body {
     
 }
 
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url('../img/memorial.jpg');
+    }
+}  
+
 .clock {
     display: grid;
     gap: var(--gap);
