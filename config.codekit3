@@ -49,14 +49,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/_assets/logo_animated.afdesign": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_assets/logo_animated.afdesign",
-		"oF": 0
-		},
 	"/apple-touch-icon.png": {
 		"ft": 32768,
 		"iS": 1476,
@@ -69,14 +61,6 @@
 		"ou": "lpckwebp-none",
 		"q": 100,
 		"rq": 75
-		},
-	"/CNAME": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/CNAME",
-		"oF": 0
 		},
 	"/css/custom-min.css": {
 		"aP": 1,
@@ -125,42 +109,6 @@
 		"q": 100,
 		"rq": 75
 		},
-	"/img/berlin_baar.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/berlin_baar.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52797496090591,
-		"prP": 0
-		},
-	"/img/kudamm.jpg": {
-		"ft": 16384,
-		"iS": 723128,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/kudamm.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"ou": "lpckwebp-none",
-		"q": 43,
-		"rq": 75
-		},
-	"/img/kudamm_new.jpg": {
-		"ft": 16384,
-		"iS": 75002,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/kudamm_new.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"ou": "lpckwebp-none",
-		"q": 100,
-		"rq": 75
-		},
 	"/img/memorial.jpg": {
 		"ft": 16384,
 		"iS": 116941,
@@ -173,16 +121,6 @@
 		"ou": "lpckwebp-none",
 		"q": 100,
 		"rq": 75
-		},
-	"/img/paper.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/paper.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52797496090591,
-		"prP": 1
 		},
 	"/img/reunification.jpg": {
 		"ft": 16384,
@@ -252,54 +190,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"/sound/timepip.m4a": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/sound/timepip.m4a",
-		"oF": 0
-		},
-	"/sound/timepip.mp3": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/sound/timepip.mp3",
-		"oF": 0
-		},
-	"/sound/timepip.ogg": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/sound/timepip.ogg",
-		"oF": 0
-		},
-	"/sound/timepip.wav": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/sound/timepip.wav",
-		"oF": 0
-		},
-	"/test_audio.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/test_audio.html",
-		"oF": 0
-		},
-	"/test_flex.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/test_flex.html",
-		"oF": 0
 		}
 	},
 "hooks": [
