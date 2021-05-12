@@ -24,8 +24,7 @@ body {
     display: grid;
     grid-template-columns: 93vw 6vw;
     padding: .5vw;
-    background: left top / cover url('../img/reunification.jpg') no-repeat, var(--black);
-    
+    background: left top / cover url('../img/reunification.jpg') no-repeat;  
 }
 
 @media screen and (orientation: landscape) {
