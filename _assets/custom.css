@@ -1,9 +1,12 @@
 :root {
-    --red:      hsla(0, 100%, 48%, 0.5);
-    --orange:   hsla(30, 100%, 48%, 0.6);
-    --black:    hsl(0, 0%, 25%);
-    --gap:      .5vw;
-    --bounce:   all 800ms cubic-bezier(1, -0.51, 0, 3.36);
+    --timeRed:      hsla(0, 100%, 48%, 0.5);
+    --timeOrange:   hsla(30, 100%, 48%, 0.6);
+    --grey:         hsl(0, 0%, 25%);
+    --black:        hsl(0, 0%, 0%);
+    --red:          hsl(0, 100%, 50%);
+    --yellow:       hsl(48, 100%, 50%);
+    --gap:          0.5vw;
+    --bounce:       all 800ms cubic-bezier(1, -0.51, 0, 3.36);
 }
 
 @font-face {
@@ -21,7 +24,7 @@ body {
     display: grid;
     grid-template-columns: 93vw 6vw;
     padding: .5vw;
-    background: left top / cover url('../img/reunification.jpg') no-repeat, black;
+    background: left top / cover url('../img/reunification.jpg') no-repeat, var(--black);
     
 }
 
@@ -57,7 +60,7 @@ body {
 .unit {
     border-radius: .3vw;
     transition: var(--bounce);
-    filter: drop-shadow(0vw 0.3vw 0.6vw var(--black));
+    /* filter: drop-shadow(0vw 0.3vw 0.6vw var(--grey)); */
 }
 
 .on {
@@ -67,26 +70,29 @@ body {
 
 .hx5 .unit.on,
 .hx1 .unit.on {
-    background-color: var(--red); 
+    background-color: var(--timeRed); 
 }
 
 .mx5 .unit.on,
 .mx1 .unit.on {
-    background-color: var(--orange);
+    background-color: var(--timeOrange);
 }
 
 .mx5 .unit:nth-child(3).on,
 .mx5 .unit:nth-child(6).on,
 .mx5 .unit:nth-child(9).on {
-    background-color: var(--red);
+    background-color: var(--timeRed);
 }
 
 header {
+    position: relative;
     display: flex;
     justify-content: center;
     height: calc(100vh - 1vw);
     padding: var(--gap);
-    background: hsla(0, 0%, 100%, 0.3);
+    border-top-right-radius: 4px;
+    background: hsla(0, 0%, 100%, 0.4);
+    -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
 }
 
@@ -96,7 +102,17 @@ h1 {
     font-family: Typed, Monospace;
     font-size: clamp(18px, 3vw, 4vw);
     writing-mode: vertical-lr;
-    color: var(--black);
+    color: var(--grey);
+}
+
+.flag {
+    position: absolute;
+    bottom: 1%;
+    width: 80%;
+    height: 5%;
+    max-height: 40px;
+    background: linear-gradient(var(--black) 0%, var(--black) 33%, var(--red) 33%, var(--red) 66%, var(--yellow) 66%, var(--yellow) 100%);
+
 }
 
 h1 > span {
