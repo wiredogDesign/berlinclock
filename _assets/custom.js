@@ -1,16 +1,18 @@
 setInterval(() => {  
 
     var time = new Date();
-    var year = time.getFullYear();
+    var year = time.getFullYear().toString().substr(-2);
     var month = time.getMonth() + 1;
     var day = time.getDate();
     var hours = time.getHours();
     var minutes = time.getMinutes();
     // makes month two digits if less than 10
     var monthCorrected = month < 10 ? '0' + month : '' + month;
-    var ymd = year + "*" + monthCorrected + "*" + day;
+    // var ymd = year + "*" + monthCorrected + "*" + day;
     // display date in header
-    document.querySelector('h1 > span').textContent = ymd;
+    document.querySelector('.y').textContent = year;
+    document.querySelector('.m').textContent = monthCorrected;
+    document.querySelector('.d').textContent = day;
     
     var hoursX5 = Math.floor(hours / 5); // gives quotient & discards remainder
     var hoursX1 = Math.floor(hours % 5); // gives remainder & discards quotient

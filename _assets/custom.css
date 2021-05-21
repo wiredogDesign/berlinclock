@@ -10,8 +10,8 @@
 }
 
 @font-face {
-    font-family: 'Typed';
-    src: url('../fonts/SpecialElite.woff2');
+    font-family: 'Square';
+    src: url('../fonts/NovaSquare.woff2');
     }
 
 * {
@@ -89,38 +89,50 @@ header {
     justify-content: center;
     height: calc(100vh - 1vw);
     padding: var(--gap);
-    border-top-right-radius: 4px;
+    /* border-radius: 0 4px 4px 0; */
     background: hsla(0, 0%, 100%, 0.4);
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
 }
 
 h1 {
-    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-    padding-top: 4px;
-    font-family: Typed, Monospace;
+    padding-top: 8px;
+    font-family: Square;
     font-size: clamp(18px, 3vw, 4vw);
     writing-mode: vertical-lr;
     color: var(--grey);
 }
 
-.flag {
-    position: absolute;
-    bottom: 1%;
-    width: 80%;
-    height: 5%;
-    max-height: 40px;
-    background: linear-gradient(var(--black) 0%, var(--black) 33%, var(--red) 33%, var(--red) 66%, var(--yellow) 66%, var(--yellow) 100%);
-
-}
-
 h1 > span {
-	font-size: 80%;
+    min-width: 0;
+    min-height: 0;
+    /* margin-bottom: -1vw; */
+    padding: 8px 2px 8px 2px;
+    font-size: 80%;
 	vertical-align: bottom;
+    color: white;
+    opacity: 0;
+    animation: fade_spans .5s ease-out 1s forwards;
+    
 }
+
+@keyframes fade_spans {
+    100% { opacity: 1 }
+}
+
+.y { background-color: var(--black) }
+
+.m { background-color: var(--red) }
+
+.d { background-color: var(--yellow); color: var(--grey); }
+
 
 @media all and (min-width: 10em) and (max-width: 40em) {
+    body {
+        grid-template-columns: 89vw 10vw;
+    }
+
     h1 {
-        padding: 2px 2px 0 0;
+        padding: 8px 2px 0 1vw;
     }
 }
