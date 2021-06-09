@@ -109,7 +109,7 @@ h1 > span {
     /* margin-bottom: -1vw; */
     padding: 8px 2px 8px 2px;
     font-size: 80%;
-	vertical-align: bottom;
+	vertical-align: baseline;
     color: white;
     opacity: 0;
     animation: fade_spans .5s ease-out 1s forwards;
