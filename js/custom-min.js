@@ -8,11 +8,12 @@ setInterval(() => {
     var minutes = time.getMinutes();
     // makes month two digits if less than 10
     var monthCorrected = month < 10 ? '0' + month : '' + month;
+    var dayCorrected = day < 10 ? '0' + day : '' + day;
     // var ymd = year + "*" + monthCorrected + "*" + day;
     // display date in header
     document.querySelector('.y').textContent = year;
     document.querySelector('.m').textContent = monthCorrected;
-    document.querySelector('.d').textContent = day;
+    document.querySelector('.d').textContent = dayCorrected;
     
     var hoursX5 = Math.floor(hours / 5); // gives quotient & discards remainder
     var hoursX1 = Math.floor(hours % 5); // gives remainder & discards quotient
