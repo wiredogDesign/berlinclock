@@ -107,7 +107,7 @@ h1 > span {
     min-width: 0;
     min-height: 0;
     /* margin-bottom: -1vw; */
-    padding: 8px 2px 8px 2px;
+    padding: .5em .8vw;
     font-size: 80%;
 	vertical-align: baseline;
     color: white;
