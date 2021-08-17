@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: 'Square';
-    src: url('../fonts/NovaSquare.woff2');
+    src: url('../fonts/OrbitronVF.woff2');
     }
 
 * {
@@ -99,6 +99,7 @@ h1 {
     padding-top: 8px;
     font-family: Square;
     font-size: clamp(18px, 3vw, 4vw);
+    font-variation-settings: 'wght' 500;
     writing-mode: vertical-lr;
     color: var(--grey);
 }

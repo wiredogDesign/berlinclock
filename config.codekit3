@@ -96,20 +96,12 @@
 		"oAP": "/favicon.ico",
 		"oF": 0
 		},
-	"/fonts/NovaSquare.woff2": {
+	"/fonts/OrbitronVF.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/fonts/NovaSquare.woff2",
-		"oF": 0
-		},
-	"/fonts/SpecialElite.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fonts/SpecialElite.woff2",
+		"oAP": "/fonts/OrbitronVF.woff2",
 		"oF": 0
 		},
 	"/img/apple-touch-icon-192.png": {
