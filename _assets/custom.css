@@ -22,8 +22,8 @@
 
 body {
     display: grid;
-    grid-template-columns: 93vw 6vw;
-    padding: .5vw;
+    grid-template-columns: 94vw 6vw;
+    /* padding: .5vw; */
     background: left top / cover url('../img/reunification.jpg') no-repeat;  
 }
 
@@ -36,7 +36,7 @@ body {
 .clock {
     display: grid;
     gap: var(--gap);
-    padding-right: var(--gap);
+    padding: var(--gap);
     overflow: hidden;
 }
 
@@ -87,19 +87,18 @@ header {
     position: relative;
     display: flex;
     justify-content: center;
-    height: calc(100vh - 1vw);
-    padding: var(--gap);
-    /* border-radius: 0 4px 4px 0; */
+    height: 100vh;
+    /* padding: var(--gap); */
     background: hsla(0, 0%, 100%, 0.4);
-    -webkit-backdrop-filter: blur(2px);
+    /* -webkit-backdrop-filter: blur(2px); */
     backdrop-filter: blur(2px);
 }
 
 h1 {
-    padding-top: 8px;
+    padding: var(--gap) 0 0 var(--gap);
     font-family: Square;
     font-size: clamp(18px, 3vw, 4vw);
-    font-variation-settings: 'wght' 500;
+    font-variation-settings: 'wght' 400;
     writing-mode: vertical-lr;
     color: var(--grey);
 }
@@ -110,7 +109,7 @@ h1 > span {
     /* margin-bottom: -1vw; */
     padding: 0.3em 0.4vw;
     font-size: 80%;
-	vertical-align: baseline;
+	vertical-align: bottom;
     color: white;
     opacity: 0;
     animation: fade_spans .5s ease-out 1s forwards;
@@ -130,7 +129,7 @@ h1 > span {
 
 @media all and (min-width: 10em) and (max-width: 40em) {
     body {
-        grid-template-columns: 89vw 10vw;
+        grid-template-columns: 90vw 10vw;
     }
 
     h1 {
