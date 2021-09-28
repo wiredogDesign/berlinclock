@@ -4,7 +4,7 @@ setInterval(() => {
     var year = time.getFullYear().toString().substr(-2);
     var month = time.getMonth() + 1;
     var day = time.getDate();
-    var hours = time.getHours();
+    var hours = time.getHours() + 1; //berlin time
     var minutes = time.getMinutes();
     // makes month two digits if less than 10
     var monthCorrected = month < 10 ? '0' + month : '' + month;
