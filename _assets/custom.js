@@ -1,7 +1,7 @@
 setInterval(() => {  
 
     var time = new Date();
-    var year = time.getFullYear().toString().substr(-2);
+    var year = time.getFullYear().toString().substring(2,4);
     var month = time.getMonth() + 1;
     var day = time.getDate();
     var hours = time.getHours();
