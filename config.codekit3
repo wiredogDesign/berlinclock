@@ -7,7 +7,7 @@
       "uuidString" : "FB3E3B44-94CF-425F-95D4-718755A9DA43"
     }
   ],
-  "creatorBuild" : "34214",
+  "creatorBuild" : "34264",
   "files" : {
     "\/_assets\/custom.css" : {
       "aP" : 1,
@@ -39,14 +39,6 @@
       "oA" : 0,
       "oAP" : "\/.gitignore",
       "oF" : 0
-    },
-    "\/.vscode\/launch.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/.vscode\/launch-min.json",
-      "oF" : 0,
-      "oO" : 0,
-      "oS" : 1
     },
     "\/apple-touch-icon.png" : {
       "ft" : 32768,
@@ -228,7 +220,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 581548269.01525998,
-    "displayValue" : "Berlin_Clock",
+    "displayValue" : "Berlin Clock",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 1,
@@ -1379,6 +1371,9 @@
       },
       "no-unused-labels" : {
         "active" : 1
+      },
+      "no-unused-private-class-members" : {
+        "active" : 0
       },
       "no-unused-vars" : {
         "active" : 1,
