@@ -1,8 +1,8 @@
 :root {
-    --timeRed:      hsla(0, 100%, 48%, 0.5);
-    --timeOrange:   hsla(30, 100%, 48%, 0.6);
+    --timeRed:      hsla(0, 100%, 48%, 0.65);
+    --timeOrange:   hsla(30, 100%, 48%, 0.84);
     --grey:         hsl(0, 0%, 25%);
-    --flag_black:        hsl(0, 0%, 0%);
+    --flag_black:   hsl(0, 0%, 0%);
     --flag_red:     hsl(0, 100%, 43.3%);
     --flag_gold:    hsl(48.5, 100%, 50%);
     --gap:          0.5vw;
@@ -23,7 +23,6 @@
 body {
     display: grid;
     grid-template-columns: 94vw 6vw;
-    /* padding: .5vw; */
     background: left top / cover url('../img/reunification.jpg') no-repeat;  
 }
 
@@ -59,7 +58,6 @@ body {
 .unit {
     border-radius: .3vw;
     transition: var(--bounce);
-    /* filter: drop-shadow(0vw 0.3vw 0.6vw var(--grey)); */
 }
 
 .on {
@@ -88,9 +86,7 @@ header {
     display: flex;
     justify-content: center;
     height: 100vh;
-    /* padding: var(--gap); */
     background: hsla(0, 0%, 100%, 0.4);
-    /* -webkit-backdrop-filter: blur(2px); */
     backdrop-filter: blur(2px);
 }
 
@@ -106,7 +102,6 @@ h1 {
 h1 > span {
     min-width: 0;
     min-height: 0;
-    /* margin-bottom: -1vw; */
     padding: 0.3em 0.4vw;
     font-size: 80%;
 	vertical-align: bottom;
