@@ -65,6 +65,18 @@ body {
     transition: var(--bounce);
 }
 
+.on::after {
+	content: '';
+	position: absolute;
+	background-image: url('img/lamp.svg');
+	width: 6vw;
+	height: 6vw;
+	left: 50%;
+	top: 50%;
+	translate: -50% -50%;
+	opacity: .2;
+}
+
 .hx5 .unit.on,
 .hx1 .unit.on {
     background-color: var(--timeRed); 
