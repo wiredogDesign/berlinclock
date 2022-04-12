@@ -97,6 +97,7 @@ h1 {
     -webkit-writing-mode: vertical-lr;
     -ms-writing-mode: tb-lr;
     writing-mode: vertical-lr;
+    line-height: 2;
     color: var(--grey);
 }
 
@@ -111,25 +112,6 @@ h1 > span {
     opacity: 0;
     -webkit-animation: fade_spans .5s ease-out 1s forwards;
     animation: fade_spans .5s ease-out 1s forwards;
-}
-
-.counter {
-	background: var(--flag_gold);
-	width: 15px;
-	height: 15px;
-	position: absolute;
-	top: 98vh;
-    opacity: 0;
-    -webkit-animation: second_count 1s ease-in-out infinite;
-    animation: second_count 1s ease-in-out infinite;
-}
-
-@-webkit-keyframes second_count {
-    100% { opacity: 0.4 }
-}
-
-@keyframes second_count {
-    100% { opacity: 0.4 }
 }
 
 @-webkit-keyframes fade_spans {
