@@ -94,17 +94,19 @@ h1 {
     font-family: Square;
     font-size: clamp(18px, 3vw, 4vw);
     font-variation-settings: 'wght' 400;
+    -webkit-writing-mode: vertical-lr;
     -ms-writing-mode: tb-lr;
     writing-mode: vertical-lr;
     color: var(--grey);
 }
 
 h1 > span {
-    min-width: 0;
-    min-height: 0;
+    display: inline-flex;
+    justify-content: center;
+    height: 10vh;
+    margin-bottom: -6px;
     padding: 0.3em 0.4vw;
-    font-size: 80%;
-	vertical-align: bottom;
+    font-size: 60%;
     color: white;
     opacity: 0;
     -webkit-animation: fade_spans .5s ease-out 1s forwards;
