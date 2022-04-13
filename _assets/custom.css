@@ -2,6 +2,7 @@
     --timeRed:      hsla(0, 100%, 48%, 0.65);
     --timeOrange:   hsla(30, 100%, 48%, 0.84);
     --grey:         hsl(0, 0%, 25%);
+    --header:       hsla(0, 0%, 48%, 0.7);
     --flag_black:   hsl(0, 0%, 0%);
     --flag_red:     hsl(0, 100%, 43.3%);
     --flag_gold:    hsl(48.5, 100%, 50%);
@@ -87,7 +88,7 @@ header {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    /* width: 10vw; */
+    background-color: var(--header);
 }
 
 h1 {
@@ -129,7 +130,7 @@ h1 {
         position: relative;
         width: 5vw;
         height: 5vw;
-        transform: rotate(0deg);
+        /* transform: rotate(0deg); */
         transform-origin: center;
         border-radius: 50%;
         background: yellow;
@@ -139,19 +140,16 @@ h1 {
             left: 50%;
             transform: translateX(-50%);
             width: 0.8vw;
-            height: 2.5vw;
-            background: var(--grey);
+            height: calc(2.5vw + 2px);
+            border-radius: 0 0 4px 4px;
+            background: var(--header);
             content: '';
         }
 
 
 @media all and (min-width: 10em) and (max-width: 40em) {
     body {
-        grid-template-columns: 90vw 10vw;
-    }
-
-    header {
-        background-color: #7A7A7A;
+        grid-template-columns: 91vw 9vw;
     }
 
     h1 {

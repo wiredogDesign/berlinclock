@@ -6,6 +6,7 @@ setInterval(() => {
     var day = time.getDate();
     var hours = time.getHours();
     var minutes = time.getMinutes();
+    var seconds = time.getSeconds();
     // makes month two digits if less than 10
     var monthCorrected = month < 10 ? '0' + month : '' + month;
     var dayCorrected = day < 10 ? '0' + day : '' + day;
@@ -49,4 +50,7 @@ setInterval(() => {
     document.querySelector('.black').textContent = year;
     document.querySelector('.red').textContent = monthCorrected;
     document.querySelector('.yellow').textContent = dayCorrected;
+
+    // update second counter
+    document.querySelector('.counter').style.transform = "rotate(" + seconds * 6 + "deg" + ")";
 }, 1000);
