@@ -7,8 +7,16 @@
       "uuidString" : "FB3E3B44-94CF-425F-95D4-718755A9DA43"
     }
   ],
-  "creatorBuild" : "34264",
+  "creatorBuild" : "34214",
   "files" : {
+    "\/_assets\/counter.afdesign" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_assets\/counter.afdesign",
+      "oF" : 0
+    },
     "\/_assets\/custom.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -39,6 +47,22 @@
       "oA" : 0,
       "oAP" : "\/.gitignore",
       "oF" : 0
+    },
+    "\/.vscode\/launch.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/.vscode\/launch-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/.vscode\/settings.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/.vscode\/settings-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
     },
     "\/apple-touch-icon.png" : {
       "ft" : 32768,
@@ -101,6 +125,16 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/img\/counter.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/counter.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/img\/lamp.svg" : {
       "ft" : 2097152,
@@ -220,7 +254,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 581548269.01525998,
-    "displayValue" : "Berlin Clock",
+    "displayValue" : "Berlin_Clock",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 1,
@@ -1371,9 +1405,6 @@
       },
       "no-unused-labels" : {
         "active" : 1
-      },
-      "no-unused-private-class-members" : {
-        "active" : 0
       },
       "no-unused-vars" : {
         "active" : 1,
