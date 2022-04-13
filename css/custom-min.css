@@ -22,7 +22,7 @@
 
 body {
     display: grid;
-    grid-template-columns: 94vw 6vw;
+    grid-template-columns: 90vw 10vw;
     background: left top / cover url('../img/reunification.jpg') no-repeat;  
 }
 
@@ -85,48 +85,67 @@ body {
 header {
     position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
+    /* width: 10vw; */
 }
 
 h1 {
-    padding: var(--gap) 0 0 var(--gap);
+    margin: 1vh 0 3vh;
     font-family: Square;
     font-size: clamp(18px, 3vw, 4vw);
     font-variation-settings: 'wght' 400;
-    -webkit-writing-mode: vertical-lr;
     -ms-writing-mode: tb-lr;
     writing-mode: vertical-lr;
-    line-height: 2;
     color: var(--grey);
 }
 
-h1 > span {
-    display: inline-flex;
-    justify-content: center;
-    height: 10vh;
-    margin-bottom: -6px;
-    padding: 0.3em 0.4vw;
-    font-size: 60%;
-    color: white;
-    opacity: 0;
-    -webkit-animation: fade_spans .5s ease-out 1s forwards;
-    animation: fade_spans .5s ease-out 1s forwards;
+.flag-container {
+    margin: 0vh 0 10vh;
 }
 
-@-webkit-keyframes fade_spans {
-    100% { opacity: 1 }
+    .flag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5vw;
+        height: 8vh;
+        font-family: Square;
+        color: white;
+        -ms-writing-mode: tb-lr;
+        writing-mode: vertical-lr;
+    }
+
+    .flag.black { background-color: var(--flag_black) }
+
+    .flag.red { background-color: var(--flag_red) }
+
+    .flag.yellow { background-color: var(--flag_gold); color: var(--grey); }
+
+.counter-container {
+	position: absolute;
+	bottom: 1vh;
 }
 
-@keyframes fade_spans {
-    100% { opacity: 1 }
-}
-
-.y { background-color: var(--flag_black) }
-
-.m { background-color: var(--flag_red) }
-
-.d { background-color: var(--flag_gold); color: var(--grey); }
+    .counter {
+        position: relative;
+        width: 5vw;
+        height: 5vw;
+        transform: rotate(0deg);
+        transform-origin: center;
+        border-radius: 50%;
+        background: yellow;
+    }
+        .counter:after {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0.8vw;
+            height: 2.5vw;
+            background: var(--grey);
+            content: '';
+        }
 
 
 @media all and (min-width: 10em) and (max-width: 40em) {

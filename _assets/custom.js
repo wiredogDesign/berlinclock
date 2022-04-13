@@ -46,8 +46,7 @@ setInterval(() => {
     ////////////////////////////////////////////////////////////////////////////
 
     // display date in header
-    document.querySelector('.y').textContent = year;
-    document.querySelector('.m').textContent = monthCorrected;
-    document.querySelector('.d').textContent = dayCorrected;
-    
+    document.querySelector('.black').textContent = year;
+    document.querySelector('.red').textContent = monthCorrected;
+    document.querySelector('.yellow').textContent = dayCorrected;
 }, 1000);
