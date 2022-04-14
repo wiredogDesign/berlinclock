@@ -3,6 +3,7 @@ var hx5 = document.querySelectorAll('.hx5 > div');
 var hx1 = document.querySelectorAll('.hx1 > div');
 var mx5 = document.querySelectorAll('.mx5 > div');
 var mx1 = document.querySelectorAll('.mx1 > div');
+var secCounter = document.querySelector('.counter');
 var getTheTime = () => {  
 
     var time = new Date();
@@ -50,7 +51,7 @@ var getTheTime = () => {
     document.querySelector('.yellow').textContent = dayCorrected;
 
     // update second counter
-    document.querySelector('.counter').style.transform = "rotate(" + seconds * 6 + "deg" + ")";
+    secCounter.style.transform = "rotate(" + seconds * 6 + "deg" + ")";
 
     requestAnimationFrame(getTheTime);
 } 

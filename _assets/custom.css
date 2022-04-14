@@ -123,35 +123,22 @@ h1 {
     .flag.yellow { background-color: var(--flag_gold); color: var(--grey); }
 
 .counter-container {
-	position: absolute;
-	bottom: 1vh;
+	margin: 1vh 0 3vh;
 }
-
     .counter {
-        position: relative;
         width: 5vw;
         height: 5vw;
-        /* transform: rotate(0deg); */
-        /* transform-origin: center; */
-        /* border-radius: 50%; */
-        /* background: yellow; */
     }
-
-        /* .counter:after {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0.8vw;
-            height: calc(2.5vw + 2px);
-            border-radius: 0 0 4px 4px;
-            background: var(--header);
-            content: '';
-        } */
 
 
 @media all and (min-width: 10em) and (max-width: 40em) {
     body {
         grid-template-columns: 90vw 10vw;
+    }
+
+    .counter {
+        width: 8vw;
+        height: 8vw;
     }
 
     h1 {
