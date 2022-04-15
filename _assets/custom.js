@@ -4,6 +4,9 @@ var hx1 = document.querySelectorAll('.hx1 > div');
 var mx5 = document.querySelectorAll('.mx5 > div');
 var mx1 = document.querySelectorAll('.mx1 > div');
 var secCounter = document.querySelector('.counter');
+var flagBlack = document.querySelector('.black');
+var flagRed = document.querySelector('.red');
+var flagYellow = document.querySelector('.yellow');
 var getTheTime = () => {  
 
     var time = new Date();
@@ -46,9 +49,9 @@ var getTheTime = () => {
     ////////////////////////////////////////////////////////////////////////////
 
     // display date in header
-    document.querySelector('.black').textContent = year;
-    document.querySelector('.red').textContent = monthCorrected;
-    document.querySelector('.yellow').textContent = dayCorrected;
+    flagBlack.textContent = year;
+    flagRed.textContent = monthCorrected;
+    flagYellow.textContent = dayCorrected;
 
     // update second counter
     secCounter.style.transform = "rotate(" + seconds * 6 + "deg" + ")";
