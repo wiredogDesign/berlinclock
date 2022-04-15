@@ -98,6 +98,7 @@ h1 {
     font-family: Square;
     font-size: clamp(18px, 3vw, 4vw);
     font-variation-settings: 'wght' 400;
+    -webkit-writing-mode: vertical-lr;
     -ms-writing-mode: tb-lr;
     writing-mode: vertical-lr;
     color: var(--grey);
@@ -115,6 +116,7 @@ h1 {
         height: 8vh;
         font-family: Square;
         color: white;
+        -webkit-writing-mode: vertical-lr;
         -ms-writing-mode: tb-lr;
         writing-mode: vertical-lr;
     }
@@ -131,6 +133,8 @@ h1 {
     .counter {
         width: 5vw;
         height: 5vw;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
     }
 
 
