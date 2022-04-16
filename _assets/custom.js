@@ -3,7 +3,7 @@ var hx5 = document.querySelectorAll('.hx5 > div');
 var hx1 = document.querySelectorAll('.hx1 > div');
 var mx5 = document.querySelectorAll('.mx5 > div');
 var mx1 = document.querySelectorAll('.mx1 > div');
-var secCounter = document.querySelector('.counter');
+// var secCounter = document.querySelector('.counter');
 var getTheTime = () => {  
 
     var time = new Date();
@@ -12,7 +12,7 @@ var getTheTime = () => {
     var day = time.getDate();
     var hours = time.getHours();
     var minutes = time.getMinutes();
-    var seconds = time.getSeconds();
+    // var seconds = time.getSeconds();
     // makes month two digits if less than 10
     var monthCorrected = month < 10 ? '0' + month : '' + month;
     var dayCorrected = day < 10 ? '0' + day : '' + day;
@@ -49,9 +49,6 @@ var getTheTime = () => {
     document.querySelector('.black').textContent = year;
     document.querySelector('.red').textContent = monthCorrected;
     document.querySelector('.yellow').textContent = dayCorrected;
-
-    // update second counter
-    secCounter.style.transform = "rotate(" + seconds * 6 + "deg" + ")";
 
     requestAnimationFrame(getTheTime);
 } 
