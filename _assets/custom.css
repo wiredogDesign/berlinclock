@@ -111,6 +111,7 @@ header {
 
 h1 {
     margin: 1vh 0 3vh;
+    padding-left: 0.6vw;
     font-family: Square;
     font-size: clamp(18px, 3vw, 4vw);
     font-variation-settings: 'wght' 400;
