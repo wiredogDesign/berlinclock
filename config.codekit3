@@ -143,6 +143,17 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/memorial.webp" : {
+      "ft" : 8388608,
+      "iS" : 39134,
+      "oA" : 0,
+      "oAP" : "\/img\/memorial.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/img\/reunification.jpg" : {
       "ft" : 16384,
       "iS" : 93385,
@@ -154,6 +165,17 @@
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/reunification.webp" : {
+      "ft" : 8388608,
+      "iS" : 25040,
+      "oA" : 0,
+      "oAP" : "\/img\/reunification.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/img\/wiredog_animated.svg" : {

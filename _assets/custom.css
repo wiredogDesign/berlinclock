@@ -24,12 +24,12 @@
 body {
     display: grid;
     grid-template-columns: 93vw 7vw;
-    background: left top / cover url('../img/reunification.jpg') no-repeat;  
+    background: left top / cover url('../img/reunification.webp') no-repeat;  
 }
 
 @media screen and (orientation: landscape) {
     body {
-        background-image: url('../img/memorial.jpg');
+        background-image: url('../img/memorial.webp');
     }
 }  
 
