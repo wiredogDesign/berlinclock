@@ -25,7 +25,18 @@
       "oA" : 0,
       "oAP" : "\/js\/custom-min.js",
       "oF" : 2,
-      "sC" : 3,
+      "sC" : 0,
+      "tS" : 0
+    },
+    "\/_assets\/custom_v2.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/js\/custom-min.js",
+      "oF" : 2,
+      "sC" : 0,
       "tS" : 0
     },
     "\/_assets\/custom.css" : {
@@ -39,17 +50,6 @@
       "oAP" : "\/css\/custom-min.css",
       "oF" : 2,
       "pg" : 0
-    },
-    "\/_assets\/custom.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/custom-min.js",
-      "oF" : 2,
-      "sC" : 0,
-      "tS" : 0
     },
     "\/.gitignore" : {
       "cB" : 0,
