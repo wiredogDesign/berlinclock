@@ -59,12 +59,17 @@ body {
 
 .unit {
     border-radius: .3vw;
+    border: 1px solid var(--header);
     transition: var(--bounce);
 }
 
 .on {
     backdrop-filter: blur(4px);
     transition: var(--bounce);
+}
+
+.unit.on {
+    border: none;
 }
 
 .hx5 .unit.on,
@@ -155,5 +160,9 @@ h1 {
 
     h1 {
         padding: 8px 2px 0 1vw;
+    }
+
+    .unit {
+        border-radius: 1.2vw;
     }
 }
