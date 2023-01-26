@@ -3,7 +3,7 @@
     --timeOrange:   hsla(30, 100%, 48%, 0.84);
     --timeDkOrange: hsla(25.4, 96%, 39.5%, 0.88);
     --grey:         hsl(0, 0%, 25%);
-    --header:       hsla(0, 0%, 48%, 0.7);
+    --gridlines:    hsla(0, 0%, 50%, 0.3);
     --flag_black:   hsl(0, 0%, 0%);
     --flag_red:     hsl(0, 100%, 43.3%);
     --flag_gold:    hsl(48.5, 100%, 50%);
@@ -24,7 +24,7 @@
 
 body {
     display: grid;
-    grid-template-columns: 93vw 7vw;
+    grid-template-columns: 86vw 14vw;
     background: left top / cover url('../img/reunification.webp') no-repeat;  
 }
 
@@ -59,7 +59,7 @@ body {
 
 .unit {
     border-radius: .3vw;
-    border: 1px solid var(--header);
+    border: 1px solid var(--gridlines);
     transition: var(--bounce);
 }
 
@@ -95,7 +95,6 @@ header {
     align-items: center;
     height: 100vh;
     overflow: hidden;
-    /* background-color: var(--header); */
 }
 
 .counter {
