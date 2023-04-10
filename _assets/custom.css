@@ -88,7 +88,7 @@ body {
     background-color: var(--timeDkOrange);
 }
 
-header {
+footer {
     position: relative;
     display: flex;
     flex-direction: column;
