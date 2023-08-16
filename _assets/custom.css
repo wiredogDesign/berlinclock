@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root {
     --timeRed:      hsla(0, 100%, 48%, 0.65);
     --timeOrange:   hsla(30, 100%, 48%, 0.84);
@@ -97,6 +99,12 @@ footer {
     overflow: hidden;
 }
 
+@keyframes counterFlash {
+    100% {
+        opacity: .9;
+    }
+}
+
 .counter {
     width: 5vw;
     height: 5vw;
@@ -107,12 +115,6 @@ footer {
     opacity: 0;
     animation: counterFlash 2s steps(2) infinite;
 }
-
-    @keyframes counterFlash {
-        100% {
-            opacity: .9;
-        }
-    }
 
 h1 {
     margin: 1vh 0 3vh;
