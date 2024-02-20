@@ -4,7 +4,7 @@ setInterval(() => {
 
     var time = new Date();
     var year = time.getFullYear().toString().substring(2,4);
-    var month = time.getMonth() + 1;
+    var month = time.getMonth() + 1; // Jan = 0, Dec = 11
     var day = time.getDate();
     var hours = time.getHours();
     var minutes = time.getMinutes();
@@ -13,8 +13,8 @@ setInterval(() => {
     var monthCorrected = month < 10 ? '0' + month : '' + month;
     var dayCorrected = day < 10 ? '0' + day : '' + day;
     
-    var hoursX5 = Math.floor(hours / 5); // gives quotient & discards remainder
-    var hoursX1 = Math.floor(hours % 5); // gives remainder & discards quotient
+    var hoursX5 = Math.floor(hours / 5); // division gives quotient & discards remainder to give 5 hour groups
+    var hoursX1 = Math.floor(hours % 5); // modulo gives remainder & discards quotient to give single hours
     var minsX5 = Math.floor(minutes / 5); // same for 5 minutes blocks
     var minsX1 = Math.floor(minutes % 5); // same for 1 minute blocks
 

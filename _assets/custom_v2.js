@@ -1,3 +1,5 @@
+// requestAnimationFrame causes high CPU
+
 // get a node list for each group
 var hx5 = document.querySelectorAll('.hx5 > div');
 var hx1 = document.querySelectorAll('.hx1 > div');
@@ -8,7 +10,7 @@ var getTheTime = () => {
 
     var time = new Date();
     var year = time.getFullYear().toString().substring(2,4);
-    var month = time.getMonth() + 1;
+    var month = time.getMonth() + 1; 
     var day = time.getDate();
     var hours = time.getHours();
     var minutes = time.getMinutes();
