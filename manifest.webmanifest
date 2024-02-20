@@ -2,8 +2,8 @@
     "short_name": "Mengenlehreuhr",
     "name": "Mengenlehreuhr",
     "description": "Berlin's favourite set theory clock",
-    "start_url": "https://wiredogdesign.github.io/berlinclock/",
-    "scope": "/berlinclock",
+    "start_url": "https://github.com/wiredogDesign/berlinclock/blob/master/manifest.webmanifest",
+    "scope": "/",
     "display": "standalone",
     "icons": [
         {
