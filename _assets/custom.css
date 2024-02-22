@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: 'Square';
-    src: url('../fonts/OrbitronVF.woff2');
+    src: url('/dist/fonts/OrbitronVF.woff2');
     }
 
 * {
@@ -27,12 +27,12 @@
 body {
     display: grid;
     grid-template-columns: 86vw 14vw;
-    background: left top / cover url('../img/reunification.webp') no-repeat;  
+    background: left top / cover url('/dist/img/reunification.webp') no-repeat;  
 }
 
 @media screen and (orientation: landscape) {
     body {
-        background-image: url('../img/memorial.webp');
+        background-image: url('/dist/img/memorial.webp');
     }
 }  
 
@@ -66,6 +66,7 @@ body {
 }
 
 .on {
+    -webkit-backdrop-filter: blur(11px);
     backdrop-filter: blur(11px);
     transition: var(--bounce);
 }
