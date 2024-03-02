@@ -107,6 +107,7 @@ footer {
 }
 
 .counter {
+    flex-shrink: 0;
     width: 5vw;
     height: 5vw;
     margin: 1vh 0 3vh;
