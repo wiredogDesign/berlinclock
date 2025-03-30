@@ -24,29 +24,22 @@ setInterval(() => {
     var mx5 = document.querySelectorAll('.mx5 > div');
     var mx1 = document.querySelectorAll('.mx1 > div');
     
+    // Helper function to update classes
+    function updateClasses(nodeList, count) {
+        nodeList.forEach((node, index) => {
+            if (index < count) {
+                node.classList.add('on');
+            } else {
+                node.classList.remove('on');
+            }
+        });
+    }
 
-    // now the working bits
-    var i = 0;
-
-    // loop through the nodes and apply <on> class
-    // eg quotient at 10:00 is 2
-    // so only first two blocks would be on
-    // then remove the <on> class when the count reaches 0
-    for(i = 0; i < hoursX5; i++) { hx5[i].classList.add('on') }
-    hoursX5 == 0 ? Array.from(hx5).forEach(hx5 => hx5.classList.remove('on')) : ""
-    /////////////////////////////////////////////////////////////////////////////
-
-    for(i = 0; i < hoursX1; i++ ) { hx1[i].classList.add('on') }
-    hoursX1 == 0 ? Array.from(hx1).forEach(hx1 => hx1.classList.remove('on')) : ""
-    /////////////////////////////////////////////////////////////////////////////
-
-    for(i = 0; i < minsX5; i++ ) { mx5[i].classList.add('on') }
-    minsX5 == 0 ?  Array.from(mx5).forEach(mx5 => mx5.classList.remove('on')) : ""
-    /////////////////////////////////////////////////////////////////////////////
-
-    for(i = 0; i < minsX1; i++ ) { mx1[i].classList.add('on') }
-    minsX1 == 0 ? Array.from(mx1).forEach(mx1 => mx1.classList.remove('on')) : ""
-    ////////////////////////////////////////////////////////////////////////////
+    // Update the classes for each group
+    updateClasses(hx5, hoursX5);
+    updateClasses(hx1, hoursX1);
+    updateClasses(mx5, minsX5);
+    updateClasses(mx1, minsX1);
 
     // display date in header
     document.querySelector('.black').textContent = year;
