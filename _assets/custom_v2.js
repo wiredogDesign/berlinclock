@@ -1,57 +1,53 @@
-// requestAnimationFrame causes high CPU
+// Cache DOM elements
+const hx5 = document.querySelectorAll('.hx5 > div');
+const hx1 = document.querySelectorAll('.hx1 > div');
+const mx5 = document.querySelectorAll('.mx5 > div');
+const mx1 = document.querySelectorAll('.mx1 > div');
 
-// get a node list for each group
-var hx5 = document.querySelectorAll('.hx5 > div');
-var hx1 = document.querySelectorAll('.hx1 > div');
-var mx5 = document.querySelectorAll('.mx5 > div');
-var mx1 = document.querySelectorAll('.mx1 > div');
-// var secCounter = document.querySelector('.counter');
-var getTheTime = () => {  
-
-    var time = new Date();
-    var year = time.getFullYear().toString().substring(2,4);
-    var month = time.getMonth() + 1; 
-    var day = time.getDate();
-    var hours = time.getHours();
-    var minutes = time.getMinutes();
-    // var seconds = time.getSeconds();
-    // makes month two digits if less than 10
-    var monthCorrected = month < 10 ? '0' + month : '' + month;
-    var dayCorrected = day < 10 ? '0' + day : '' + day;
+const updateClock = () => {
+    const time = new Date();
+    const year = time.getFullYear().toString().substring(2,4);
+    const month = time.getMonth() + 1;
+    const day = time.getDate();
+    const hours = time.getHours();
+    const minutes = time.getMinutes();
     
-    var hoursX5 = Math.floor(hours / 5); // gives quotient & discards remainder
-    var hoursX1 = Math.floor(hours % 5); // gives remainder & discards quotient
-    var minsX5 = Math.floor(minutes / 5); // same for 5 minutes blocks
-    var minsX1 = Math.floor(minutes % 5); // same for 1 minute blocks
+    const monthCorrected = month.toString().padStart(2, '0');
+    const dayCorrected = day.toString().padStart(2, '0');
+    
+    const hoursX5 = Math.floor(hours / 5);
+    const hoursX1 = hours % 5;
+    const minsX5 = Math.floor(minutes / 5);
+    const minsX1 = minutes % 5;
 
-    // now the working bits
-    var i = 0;
+    // Update hour blocks (x5)
+    Array.from(hx5).forEach((block, index) => {
+        block.classList.toggle('on', index < hoursX5);
+    });
 
-    // loop through the nodes and apply <on> class
-    // eg quotient at 10:00 is 2
-    // so only first two blocks would be on
-    // then remove the <on> class when the count reaches 0
-    for(i = 0; i < hoursX5; i++) { hx5[i].classList.add('on') }
-    hoursX5 == 0 ? Array.from(hx5).forEach(hx5 => hx5.classList.remove('on')) : ""
-    /////////////////////////////////////////////////////////////////////////////
+    // Update hour blocks (x1)
+    Array.from(hx1).forEach((block, index) => {
+        block.classList.toggle('on', index < hoursX1);
+    });
 
-    for(i = 0; i < hoursX1; i++ ) { hx1[i].classList.add('on') }
-    hoursX1 == 0 ? Array.from(hx1).forEach(hx1 => hx1.classList.remove('on')) : ""
-    /////////////////////////////////////////////////////////////////////////////
+    // Update minute blocks (x5)
+    Array.from(mx5).forEach((block, index) => {
+        block.classList.toggle('on', index < minsX5);
+    });
 
-    for(i = 0; i < minsX5; i++ ) { mx5[i].classList.add('on') }
-    minsX5 == 0 ?  Array.from(mx5).forEach(mx5 => mx5.classList.remove('on')) : ""
-    /////////////////////////////////////////////////////////////////////////////
+    // Update minute blocks (x1)
+    Array.from(mx1).forEach((block, index) => {
+        block.classList.toggle('on', index < minsX1);
+    });
 
-    for(i = 0; i < minsX1; i++ ) { mx1[i].classList.add('on') }
-    minsX1 == 0 ? Array.from(mx1).forEach(mx1 => mx1.classList.remove('on')) : ""
-    ////////////////////////////////////////////////////////////////////////////
-
-    // display date in header
+    // Update date display
     document.querySelector('.black').textContent = year;
     document.querySelector('.red').textContent = monthCorrected;
     document.querySelector('.yellow').textContent = dayCorrected;
+}
 
-    requestAnimationFrame(getTheTime);
-} 
-requestAnimationFrame(getTheTime)
+// Initial update
+updateClock();
+
+// Update every minute
+setInterval(updateClock, 60000);
